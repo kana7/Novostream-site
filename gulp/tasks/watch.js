@@ -9,7 +9,7 @@ gulp.task('watch', () => {
       baseDir: 'app'
     }
   });
-  watch('./app/index.html', () => {
+  watch('./app/**/*.html', () => {
     browserSync.reload();
   });
   watch('./app/assets/**/*.css', () => {
