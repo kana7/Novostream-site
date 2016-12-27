@@ -1,5 +1,6 @@
 dist/
 build/
+temp/
 public/build/
 
 .DS_Store

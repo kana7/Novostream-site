@@ -20,7 +20,7 @@ gulp.task('deleteDistFolder', gulp.series('icons', () => {
   return del('./dist');
 }));
 
-gulp.task('copyGeneralFiles', gulp.series('deleteDistFolder', () => {
+gulp.task('copyGeneralFiles', () => {
   var pathsToCopy = [
     './app/**/*',
     '!./app/index.html',
@@ -32,22 +32,18 @@ gulp.task('copyGeneralFiles', gulp.series('deleteDistFolder', () => {
   ];
   return gulp.src(pathsToCopy)
   .pipe(gulp.dest('./dist'));
-}));
+});
 
-
-gulp.task('optimizeImages', gulp.series('deleteDistFolder', () => {
+//IMAGEMIN NOT USED SINCE BROKEN ON WINDOWS BEHIND A PROXY SET
+gulp.task('optimizeImages', () => {
   return gulp.src(['./app/assets/images/**/*', '!./app/assets/images/icons', '!./app/assets/images/icons/**/*'])
-  .pipe(imagemin({
+  /*.pipe(imagemin({
     progressive: true,
     interlaced: true,
     multipass: true
-  }))
+  }))*/
   .pipe(gulp.dest('./dist/assets/images'));
-}));
-
-gulp.task('useminTrigger', gulp.series('deleteDistFolder', () => {
-  gulp.start("usemin");
-}));
+});
 
 gulp.task('usemin', gulp.series('styles', 'scripts', () => {
   return gulp.src('./app/index.html')
@@ -66,4 +62,4 @@ gulp.task('usemin', gulp.series('styles', 'scripts', () => {
   .pipe(gulp.dest('./dist'));
 }));
 
-gulp.task('build', gulp.series('deleteDistFolder', 'copyGeneralFiles', 'optimizeImages', 'useminTrigger'));
+gulp.task('build', gulp.series('deleteDistFolder', 'copyGeneralFiles', 'optimizeImages', 'usemin'));
