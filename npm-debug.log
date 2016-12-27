@@ -1,0 +1,67 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\ProgramData\\Chocolatey\\lib\\npm\\tools\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   '\'gulpjs/gulp.git#4.0\'',
+1 verbose cli   '--save-dev' ]
+2 info using npm@1.4.9
+3 info using node@v6.9.2
+4 warn package.json novoStream-site@0.0.0 No README data
+5 verbose readDependencies using package.json deps
+6 verbose cache add [ '\'gulpjs/gulp.git#4.0\'', null ]
+7 verbose cache add name=undefined spec="'gulpjs/gulp.git#4.0'" args=["'gulpjs/gulp.git#4.0'",null]
+8 verbose parsed url Url {
+8 verbose parsed url   protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: '#4.0%27',
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: '%27gulpjs/gulp.git',
+8 verbose parsed url   path: '%27gulpjs/gulp.git',
+8 verbose parsed url   href: '%27gulpjs/gulp.git#4.0%27' }
+9 silly lockFile 3624b29d-gulpjs-gulp-git-4-0 'gulpjs/gulp.git#4.0'
+10 verbose lock 'gulpjs/gulp.git#4.0' C:\Users\pc\AppData\Roaming\npm-cache\3624b29d-gulpjs-gulp-git-4-0.lock
+11 info maybeGithub Attempting 'gulpjs/gulp.git#4.0' from git://github.com/'gulpjs/gulp.git#4.0'
+12 silly lockFile a6d757e0-git-github-com-gulpjs-gulp-git git://github.com/'gulpjs/gulp.git
+13 verbose lock git://github.com/'gulpjs/gulp.git C:\Users\pc\AppData\Roaming\npm-cache\a6d757e0-git-github-com-gulpjs-gulp-git.lock
+14 verbose addRemoteGit [ 'git://github.com/\'gulpjs/gulp.git', '4.0%27' ]
+15 verbose git clone git://github.com/'gulpjs/gulp.git Cloning into bare repository 'C:\Users\pc\AppData\Roaming\npm-cache\_git-remotes\git-github-com-gulpjs-gulp-git-a6d757e0'...
+15 verbose git clone git://github.com/'gulpjs/gulp.git fatal: remote error:
+15 verbose git clone git://github.com/'gulpjs/gulp.git   'gulpjs/gulp is not a valid repository name
+15 verbose git clone git://github.com/'gulpjs/gulp.git   Email support@github.com for help
+16 silly lockFile a6d757e0-git-github-com-gulpjs-gulp-git git://github.com/'gulpjs/gulp.git
+17 silly lockFile a6d757e0-git-github-com-gulpjs-gulp-git git://github.com/'gulpjs/gulp.git
+18 info maybeGithub Attempting 'gulpjs/gulp.git#4.0' from git+ssh://git@github.com:'gulpjs/gulp.git#4.0'
+19 silly lockFile 422f94ca-h-git-github-com-gulpjs-gulp-git ssh://git@github.com:'gulpjs/gulp.git
+20 verbose lock ssh://git@github.com:'gulpjs/gulp.git C:\Users\pc\AppData\Roaming\npm-cache\422f94ca-h-git-github-com-gulpjs-gulp-git.lock
+21 verbose addRemoteGit [ 'ssh://git@github.com:\'gulpjs/gulp.git', '4.0%27' ]
+22 error git clone ssh://git@github.com:'gulpjs/gulp.git Cloning into bare repository 'C:\Users\pc\AppData\Roaming\npm-cache\_git-remotes\ssh-git-github-com-gulpjs-gulp-git-422f94ca'...
+22 error git clone ssh://git@github.com:'gulpjs/gulp.git ssh: Could not resolve hostname github.com:'gulpjs: Name or service not known
+22 error git clone ssh://git@github.com:'gulpjs/gulp.git fatal: Could not read from remote repository.
+22 error git clone ssh://git@github.com:'gulpjs/gulp.git
+22 error git clone ssh://git@github.com:'gulpjs/gulp.git Please make sure you have the correct access rights
+22 error git clone ssh://git@github.com:'gulpjs/gulp.git and the repository exists.
+23 silly lockFile 422f94ca-h-git-github-com-gulpjs-gulp-git ssh://git@github.com:'gulpjs/gulp.git
+24 silly lockFile 422f94ca-h-git-github-com-gulpjs-gulp-git ssh://git@github.com:'gulpjs/gulp.git
+25 silly lockFile 3624b29d-gulpjs-gulp-git-4-0 'gulpjs/gulp.git#4.0'
+26 silly lockFile 3624b29d-gulpjs-gulp-git-4-0 'gulpjs/gulp.git#4.0'
+27 error addLocal Could not install 'gulpjs/gulp.git#4.0'
+28 error Error: ENOENT: no such file or directory, stat 'C:\Users\pc\Documents\website\novoStream-site\'gulpjs\gulp.git#4.0''
+28 error     at Error (native)
+29 error If you need help, you may report this *entire* log,
+29 error including the npm and node versions, at:
+29 error     <http://github.com/npm/npm/issues>
+30 error System Windows_NT 10.0.14393
+31 error command "C:\\Program Files\\nodejs\\node.exe" "C:\\ProgramData\\Chocolatey\\lib\\npm\\tools\\node_modules\\npm\\bin\\npm-cli.js" "install" "'gulpjs/gulp.git#4.0'" "--save-dev"
+32 error cwd C:\Users\pc\Documents\website\novoStream-site
+33 error node -v v6.9.2
+34 error npm -v 1.4.9
+35 error path C:\Users\pc\Documents\website\novoStream-site\'gulpjs\gulp.git#4.0'
+36 error syscall stat
+37 error code ENOENT
+38 error errno -4058
+39 verbose exit [ -4058, true ]
