@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,400italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600' rel='stylesheet' type='text/css'>
   <title>Novostream</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
@@ -19,25 +19,29 @@
 <body>
   <header class="site-header">
     <div class="site-header__top">
-      <span class="foot-note"><span class="icon icon--phone"></span> Hotline : 0651 2799 0000</span>
-      <ul class="site-header__top__links">
-        <li><a href="#" class="foot-note">Informationen</a></li>
-        <li><a href="#" class="foot-note">Kontakt</a></li>
-      </ul>
+      <div class="wrapper">
+        <span class="foot-note"><span class="icon icon--phone"></span> Hotline : 0651 2799 0000</span>
+        <ul class="site-header__top__links">
+          <li><a href="#" class="foot-note">Informationen</a></li>
+          <li><a href="#" class="foot-note">Kontakt</a></li>
+        </ul>
+      </div>
     </div>
     <div class="site-header__bottom">
-      <div class="site-header__bottom__logo">
-        <img src="./assets/images/Novostream_logo.png" alt="Logo Novostream"/>
+      <div class="wrapper">
+        <div class="site-header__bottom__logo">
+          <img src="./assets/images/Novostream_logo.png" alt="Logo Novostream"/>
+        </div>
+        <nav class="primary-nav">
+          <ul>
+            <li><a href="#"><span class="icon--home"></span></a></li>
+            <li><a href="#">Internet Tarife</a></li>
+            <li><a href="#">Telefontarife</a></li>
+            <li><a href="#">Zubehör</a></li>
+            <li><a href="#">Internet via SAT</a></li>
+          </ul>
+        </nav>
       </div>
-      <nav class="primary-nav">
-        <ul>
-          <li><a href="#"><span class="icon--home"></span></a></li>
-          <li><a href="#">Internet Tarife</a></li>
-          <li><a href="#">Telefontarife</a></li>
-          <li><a href="#">Zubehör</a></li>
-          <li><a href="#">Internet via SAT</a></li>
-        </ul>
-      </nav>
     </div>
   </header>
   <!--
@@ -119,26 +123,30 @@
   </section>
   <footer class="site-footer">
     <div class="site-footer__top">
-      <div class="site-footer__top__logo">
-        <img src="./assets/images/Novostream_icone.png" alt="icône Novostream">
-        <span>&copy; 2016 NovoStream</span>
+      <div class="wrapper">
+        <div class="site-footer__top__logo">
+          <img src="./assets/images/Novostream_icone.png" alt="icône Novostream">
+          <span>&copy; 2016 NovoStream</span>
+        </div>
+        <nav class="primary-nav primary-nav--small">
+          <ul>
+            <li><a href="#">impressum</a></li>
+            <li><a href="#">AGB</a></li>
+            <li><a href="#">widerruf</a></li>
+            <li><a href="#">datenschutz</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">kontakt</a></li>
+          </ul>
+        </nav>
       </div>
-      <nav class="primary-nav primary-nav--small">
-        <ul>
-          <li><a href="#">impressum</a></li>
-          <li><a href="#">AGB</a></li>
-          <li><a href="#">widerruf</a></li>
-          <li><a href="#">datenschutz</a></li>
-          <li><a href="#">FAQ</a></li>
-          <li><a href="#">kontakt</a></li>
-        </ul>
-      </nav>
     </div>
     <div class="site-footer__bottom">
-      <span class="foot-note">NOVOSTREAM ist autorisierter Partner der SES Astra S.A.,Luxembourg.</span>
-      <div class="site-footer__bottom__logo">
-        <span>Powerd by</span>
-        <img src="./assets/images/poweredby_astraconnect_rgb_w.png" alt="icône Astra Connect">
+      <div class="wrapper">
+        <span class="foot-note">NOVOSTREAM ist autorisierter Partner der SES Astra S.A.,Luxembourg.</span>
+        <div class="site-footer__bottom__logo">
+          <span>Powerd by</span>
+          <img src="./assets/images/poweredby_astraconnect_rgb_w.png" alt="icône Astra Connect">
+        </div>
       </div>
     </div>
   </footer>
