@@ -17,8 +17,5 @@
         &__logo{
           display: inline-block;
         }
-        &__nav{
-          right: 18px;
-        }
     }
 }

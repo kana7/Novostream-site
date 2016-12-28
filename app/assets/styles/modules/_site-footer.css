@@ -1,6 +1,14 @@
 .site-footer {
     &__top {
         border-bottom: 3px solid $orange;
+        padding: 8px 0;
+        &__logo{
+          display: inline-block;
+          img{
+            height: 58px; margin-right: 8px
+          }
+          span{position: relative; bottom: 22px;}
+        }
     }
     &__bottom {
         background-color: $grey-light;
