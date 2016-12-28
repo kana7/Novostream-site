@@ -3,6 +3,7 @@ $orange: #D77E30;
 $grey-dark: #3f4952;
 $grey-med: #4D4D4F;
 $grey-light: #6F6F6F;
+$white-cream : #eaebec;
 
 /* FONT Variables
 // --------------------------------------------------*/
@@ -14,9 +15,7 @@ $base-line-height: 1;
 /* GRID Variables
 // --------------------------------------------------*/
 
-
 /*main queries*/
-
 $phone: 671 !default;
 $tab: 672 !default;
 $desk: 1056 !default;

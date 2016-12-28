@@ -2,4 +2,7 @@
     font-size: 0.860625rem;
     font-weight: 400;
     color: white;
+    &__icon{
+      display: inline-block;
+    }
 }

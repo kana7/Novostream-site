@@ -37,4 +37,5 @@
           padding-right: 18px;
         }
       }
+      &--relative{position: relative;}
 }

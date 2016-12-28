@@ -1,6 +1,6 @@
 .site-header {
     &__top {
-      padding: 7px 0;
+      padding: 5px 0;
         background-color: $grey-dark;
         &__links {
             float: right;
@@ -12,6 +12,13 @@
         }
     }
     &__bottom {
-        background-color: $grey-light;
+        padding: 28px 0;
+        background-color: white;
+        &__logo{
+          display: inline-block;
+        }
+        &__nav{
+          right: 18px;
+        }
     }
 }
