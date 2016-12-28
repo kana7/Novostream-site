@@ -1,0 +1,8 @@
+.site-header {
+    &__top {
+        background-color: $grey-dark;
+    }
+    &__bottom {
+        background-color: $grey-light;
+    }
+}

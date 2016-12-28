@@ -1,0 +1,12 @@
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+        outline: 0;
+    }
+}

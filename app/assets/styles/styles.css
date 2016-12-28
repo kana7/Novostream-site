@@ -4,3 +4,8 @@
 @import "base/_global";
 @import "modules/_sprite";
 @import "modules/_btn";
+@import "modules/_slider";
+@import "modules/_site-footer";
+@import "modules/_site-header";
+@import "modules/_primary-nav";
+@import "modules/_foot-note";

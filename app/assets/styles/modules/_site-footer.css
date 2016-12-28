@@ -1,0 +1,8 @@
+.site-footer {
+    &__top {
+        border-bottom: 3px solid $orange;
+    }
+    &__bottom {
+        background-color: $grey-light;
+    }
+}
