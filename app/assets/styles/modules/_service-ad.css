@@ -1,0 +1,44 @@
+.service-ad{
+  padding: 2.5rem 1.458rem;
+  background-color: white;
+  border: 1px solid transparent;
+  transition: all .3s ease-out;
+  cursor: pointer;
+  margin-bottom: 10px;
+  @mixin atMedium{
+    margin-bottom: 0;
+    &__content{
+        height: 153px;
+    }
+    &__link{
+      position: absolute;
+    }
+  }
+  &__content{
+      position: relative;
+  }
+  &__txt, &__link, &__title{
+    font-size: .9375rem;
+  }
+  &__title{
+    margin-top: 0;
+    font-size: .9375rem;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  &__link{
+    bottom: 0;
+    transition: color .3s ease-out;
+  }
+  &:hover{
+    border: 1px solid $blue;
+    box-shadow: 0 0 10px 0 rgba($blue, 0.5);
+    .service-panel__btn{
+      background-color: $blue;
+      color: white;
+    }
+    .service-ad__link{
+      color: $blue;
+    }
+  }
+}

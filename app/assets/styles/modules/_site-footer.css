@@ -5,7 +5,8 @@
         &__logo{
           display: inline-block;
           img{
-            height: 58px; margin-right: 8px
+            display: inline;
+            height: 58px; margin-right: 8px;
           }
           span{position: relative; bottom: 22px;}
         }

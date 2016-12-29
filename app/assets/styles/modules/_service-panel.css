@@ -4,6 +4,10 @@
   border: 1px solid transparent;
   transition: all .3s ease-out;
   overflow: hidden;
+  margin-bottom: 10px;
+  @mixin atMedium{
+  margin-bottom: 0; 
+  }
   img{
     transition: all .3s ease-out;
   }
