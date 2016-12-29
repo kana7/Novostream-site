@@ -1,0 +1,19 @@
+.aid{
+  background-color: white;
+  border: 2px solid $orange;
+  border-radius: 8px;
+  &__question{
+    color: $orange;
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    padding: 1.125rem;
+  }
+  &__answer{display: none;}
+  &--vertical-middle{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}

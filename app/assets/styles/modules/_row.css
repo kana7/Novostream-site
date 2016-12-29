@@ -24,6 +24,9 @@
     &--gutters-small {
         margin-right: -45px;
     }
+    &--containers-relative{
+      &>div{position: relative;}
+    }
     /*Debut règles hauteur égale*/
     .flexbox &--equal-height-at-medium {
         @mixin atMedium {

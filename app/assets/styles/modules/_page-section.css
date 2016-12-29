@@ -1,21 +1,28 @@
 .page-section {
-    padding: 1.2rem;
+  padding: 1.2rem;
+  @mixin atMedium {
+    padding: 3.125rem 0;
+  }
+  &--cream {
+    background-color: $white-cream;
+  }
+  &--aid {
+    min-height: 210px;
+    padding: 75px 0;
+    background: url("../../assets/images/BG_parabole.jpg") no-repeat;
+    background-size: cover;
+    background-position: top center;
+  }
+  &--no-b-padding-until-medium {
+    padding-bottom: 0;
     @mixin atMedium {
-        padding: 3.125rem 0;
+      padding-bottom: 4.5rem;
     }
-    &--cream {
-        background-color: $white-cream;
+  }
+  &--no-b-padding-until-large {
+    padding-bottom: 0;
+    @mixin atLarge {
+      padding-bottom: 4.5rem;
     }
-    &--no-b-padding-until-medium {
-        padding-bottom: 0;
-        @mixin atMedium {
-            padding-bottom: 4.5rem;
-        }
-    }
-    &--no-b-padding-until-large {
-        padding-bottom: 0;
-        @mixin atLarge {
-            padding-bottom: 4.5rem;
-        }
-    }
+  }
 }
