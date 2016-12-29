@@ -1,9 +1,10 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: #444347;
 }
 
 img{
+  display: block;
   max-width: 100%;
   height: auto;
 }

@@ -1,7 +1,7 @@
 .page-section {
     padding: 1.2rem;
     @mixin atMedium {
-        padding: 4.5rem 0;
+        padding: 3.125rem 0;
     }
     &--cream {
         background-color: $white-cream;
