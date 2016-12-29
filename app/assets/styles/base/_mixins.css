@@ -20,3 +20,8 @@
     display: table;
   }
 }
+@define-mixin vertical-align-middle{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}

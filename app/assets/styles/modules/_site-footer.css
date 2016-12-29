@@ -12,6 +12,14 @@
         }
     }
     &__bottom {
+      padding: 14px 0;
         background-color: $grey-light;
+        &__foot-note{
+          @mixin vertical-align-middle;
+        }
+        &__logo{
+          float: right;
+          img{display: inline;}
+        }
     }
 }
