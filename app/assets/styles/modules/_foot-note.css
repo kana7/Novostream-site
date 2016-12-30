@@ -6,3 +6,8 @@
       display: inline-block;
     }
 }
+a.foot-note{
+  transition: color .3s ease-out;
+  &:hover{color: $blue;}
+  &--active{color: $blue;}
+}

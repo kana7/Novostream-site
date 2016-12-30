@@ -34,7 +34,8 @@
         display: block;
         color: $orange;
       }
-      &:hover{
+      &.active{color: $orange;}
+      &:not(.active):hover{
         span:not(.icon){top: -35px;}
       }
     }
@@ -49,7 +50,7 @@
         padding: 0 .75rem;
         text-align: center;
         transition: color .3s ease-out;
-        &:hover{color: $orange;}
+        &:hover, &.active{color: $orange;}
       }
     }
   }
