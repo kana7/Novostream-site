@@ -1,4 +1,6 @@
-import MobileMenu from './modules/MobileMenu';
+import BottomSlider from './modules/BottomSlider';
 import $ from 'jquery';
 
-var mobileMenu = new MobileMenu();
+$(".aid").each(function(){
+  new BottomSlider($(this));
+});

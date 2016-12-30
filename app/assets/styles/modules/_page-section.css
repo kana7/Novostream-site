@@ -9,9 +9,9 @@
   &--aid {
     min-height: 210px;
     padding: 75px 0;
-    background: url("../../assets/images/BG_parabole.jpg") no-repeat;
-    background-size: cover;
-    background-position: top center;
+    background: #1c3647 url("../../assets/images/BG_parabole.jpg") no-repeat;
+    background-size: 100% auto;
+    background-position: top;
   }
   &--no-b-padding-until-medium {
     padding-bottom: 0;
