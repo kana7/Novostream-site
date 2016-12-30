@@ -15,7 +15,7 @@
     position: absolute;
     top: 15px;
     left: 20px;
-    width: 210px;
+    max-width: 210px;
   }
   &__title{
     margin: 0;
