@@ -4,7 +4,6 @@
       max-width: 1228px;
       margin-right: auto;
       margin-left: auto;
-      overflow: hidden;
       &--narrow{
         max-width: 470px;
       }

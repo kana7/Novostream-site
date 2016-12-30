@@ -29,6 +29,12 @@
   &__link{
     bottom: 0;
     transition: color .3s ease-out;
+    &__icon{
+      font-size: 1.1em;
+      color: $blue;
+      vertical-align: middle;
+      margin-left: 5px;
+    }
   }
   &:hover{
     border: 1px solid $blue;

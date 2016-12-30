@@ -8,7 +8,12 @@
     font-weight: 600;
     text-align: center;
     cursor: pointer;
-    padding: 1.125rem 0;
+    padding: 8px 0;
+    &__icon{
+      margin-right: 10px;
+      vertical-align: -14%;
+      font-size: 1.8em;
+    }
   }
   &__answer{
     border-top: 1px solid transparent;

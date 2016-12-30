@@ -6,7 +6,7 @@
   overflow: hidden;
   margin-bottom: 10px;
   @mixin atMedium{
-  margin-bottom: 0; 
+  margin-bottom: 0;
   }
   img{
     transition: all .3s ease-out;
@@ -32,6 +32,10 @@
     position: absolute;
     bottom: 15px;
     right: 20px;
+    &__icon{
+      vertical-align: middle;
+      margin-left: 3px;
+    }
   }
   &:hover{
     border: 1px solid $blue;

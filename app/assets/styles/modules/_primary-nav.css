@@ -14,8 +14,10 @@
   li {
     display: inline-block;
     font-size: 1.25rem;
-    font-weight: 300px;
     height: 35px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
     &:not(:first-child) {
       border-left: 2px dotted $orange;
     }
@@ -23,9 +25,18 @@
       padding-right: 0;
     }
     a {
+      display: block;
       line-height: 35px;
       padding: 0 1.125rem;
-      text-align: center;
+      &>span{position: relative; top: 0; transition: top .3s ease-out;}
+      &>span:not(.icon):after{
+        content: attr(title);
+        display: block;
+        color: $orange;
+      }
+      &:hover{
+        span:not(.icon){top: -35px;}
+      }
     }
   }
 
@@ -37,7 +48,12 @@
         line-height: 20px;
         padding: 0 .75rem;
         text-align: center;
+        transition: color .3s ease-out;
+        &:hover{color: $orange;}
       }
     }
   }
+}
+.primary-nav:not(.primary-nav--small) li:first-child{
+  color: $orange;
 }
