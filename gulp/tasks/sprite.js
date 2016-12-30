@@ -31,7 +31,7 @@ var config = {
 };
 
 gulp.task('beginClean', () => {
-  return del(['./app/temp/sprite', './app/assets/images/sprites']);
+  return del(['./app/temp/sprite', './app/assets/images/sprites', './app/temp/fonts']);
 });
 
 gulp.task('createSprite', ()=>{
@@ -39,6 +39,11 @@ gulp.task('createSprite', ()=>{
   .pipe(svgSprite(config))
   .pipe(gulp.dest('./app/temp/sprite/'));
 });
+
+gulp.task('moveFontsIcons', gulp.series('beginClean', ()=>{
+  return gulp.src('./app/assets/fonts/**')
+  .pipe(gulp.dest('./app/temp/fonts'));
+}));
 
 gulp.task('createPngCopy', ()=>{
   return gulp.src('./app/temp/sprite/css/*.svg')
