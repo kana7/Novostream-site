@@ -3,16 +3,19 @@
     @content;
   }
 }
+
 @mixin atMedium {
   @media(min-width: 800px){
     @content;
   }
 }
+
 @mixin atLarge {
   @media(min-width: 1010px){
     @content;
   }
 }
+
 @mixin clearfix{
   &::after{
     content: "";
@@ -20,6 +23,50 @@
     display: table;
   }
 }
+
+@mixin base-style(){
+    font-family: $font-stack;
+    font-size: $font-size;
+    color: $font-color;
+}
+
+//queries for the grid
+@mixin media($media) {
+  @if $media == atSmall {
+    @media screen and (max-width: $atSmall + px) { @content; }
+  }
+  @else if $media == atMedium {
+    @media screen and (min-width: $atMedium + px) { @content; }
+  }
+  @else if $media == atLarge {
+    @media screen and (min-width: $atLarge + px) { @content; }
+  }
+}
+
+@mixin viewport($media, $min: 0, $max: 0) {
+  @if $media == max {
+    @media screen and (max-width: $max + px) { @content; }
+  }
+  @else if $media == range {
+    @media screen and (min-width: $min + px) and (max-width: $max + px) { @content; }
+  }
+  @else if $media == min {
+    @media screen and (min-width: $min + px) { @content; }
+  }
+}
+
+@mixin container-base{
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: ($gridGutterWidth/2);
+  padding-right: ($gridGutterWidth/2);
+}
+
+@mixin container($containerWidth){
+  @include container-base;
+  width: #{$containerWidth}px;
+}
+
 @mixin vertical-align-middle{
   position: absolute;
   top: 50%;

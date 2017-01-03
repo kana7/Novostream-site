@@ -9,14 +9,28 @@ $white-cream : #eaebec;
 // --------------------------------------------------*/
 
 $font-stack: 'Open Sans', sans-serif;
+$font-color: #444347;
 $font-size: 1rem;
-$base-line-height: 1;
 
 /* GRID Variables
 // --------------------------------------------------*/
 
 /*main queries*/
-$phone: 671 !default;
-$tab: 672 !default;
-$desk: 1056 !default;
-$lgdesk: 1302 !default;
+$atSmall: 530 !default;
+$atMedium: 800 !default;
+$atLarge: 1010 !default;
+
+// Default grid
+// -------------------------
+$gridColumns:             12 !default;
+$gridColumnWidth:         60px !default;
+$gridGutterWidth:         20px !default;
+$gridRowWidth:            $gridColumns*($gridColumnWidth+$gridGutterWidth);
+
+// Fluid grid
+// -------------------------
+$fluidGridColumnWidth:    percentage(($gridColumnWidth+$gridGutterWidth)/$gridRowWidth);
+
+@function getColumnWidth($columnNumber){
+    @return $columnNumber*$fluidGridColumnWidth;
+}
