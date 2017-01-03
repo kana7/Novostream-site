@@ -1,0 +1,30 @@
+.page-section {
+  padding: 1.2rem;
+  @include atMedium {
+    padding: 3.125rem 0;
+  }
+  &--cream {
+    background-color: $white-cream;
+  }
+  &--aid {
+    min-height: 210px;
+    padding: 75px 0;
+    &.lazyloaded{
+      background: #1c3647 url("../../assets/images/BG_parabole.jpg") no-repeat;
+      background-size: 100% auto;
+      background-position: top;
+    }
+  }
+  &--no-b-padding-until-medium {
+    padding-bottom: 0;
+    @include atMedium {
+      padding-bottom: 4.5rem;
+    }
+  }
+  &--no-b-padding-until-large {
+    padding-bottom: 0;
+    @include atLarge {
+      padding-bottom: 4.5rem;
+    }
+  }
+}
