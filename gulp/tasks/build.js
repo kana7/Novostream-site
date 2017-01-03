@@ -45,7 +45,7 @@ gulp.task('optimizeImages', () => {
   .pipe(gulp.dest('./dist/assets/images'));
 });
 
-gulp.task('usemin', gulp.series('styles', 'scripts', () => {
+gulp.task('usemin', gulp.series('sass', 'scripts', () => {
   return gulp.src('./app/index.html')
   .pipe(usemin({
     css: [function() {

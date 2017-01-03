@@ -26,6 +26,8 @@
     "gulp-postcss": "^6.2.0",
     "gulp-rename": "^1.2.2",
     "gulp-rev": "^7.1.2",
+    "gulp-sass": "^3.0.0",
+    "gulp-sourcemaps": "^1.9.1",
     "gulp-svg-sprite": "^1.3.1",
     "gulp-svg2png": "^0.3.0",
     "gulp-uglify": "^2.0.0",
@@ -40,8 +42,9 @@
   },
   "dependencies": {
     "jquery": "^3.1.1",
+    "lazysizes": "^3.0.0-rc2",
+    "normalize-scss": "^6.0.0",
     "normalize.css": "^5.0.0",
-    "picturefill": "^3.0.2",
-    "lazysizes": "^3.0.0-rc2"
+    "picturefill": "^3.0.2"
   }
 }
