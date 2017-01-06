@@ -1,13 +1,23 @@
-.banner {
+@mixin banner{
+  &__content{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    &__wrapper{
+      max-width: 320px;
+    }
+  }
+}
+
+.banner-home {
+  @include banner;
   position: relative;
   background-color: $grey-dark;
   min-height: 200px;
   box-shadow: inset 0 0 30px 1px rgba(0, 0, 0, 0.7);
-  &__img{
-    position: relative;
-    width: 100%;
-    max-width: none;
-  }
   &__top-image{
     position: absolute;
     top: 0;
@@ -20,28 +30,18 @@
       width: auto;
     }
   }
-  &__content{
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    left: 0;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    &__wrapper{
-      max-width: 320px;
-    }
-  }
-  &__title{
-    font-weight: 600;
-    line-height: 1.3;
-    text-transform: uppercase;
-    font-size: 1.375rem;
-    color: $orange;
-  }
   &__txt{
     margin: 25px 0;
     line-height: 1.3;
     font-size: 1.125rem;
     color: white;
   }
+}
+
+.banner-page{
+  position: relative;
+  height: 165px;
+  overflow: hidden;
+  @include banner;
+  border-bottom: 1px solid rgba($orange, 0.5);
 }
