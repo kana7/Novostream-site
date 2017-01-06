@@ -1,15 +1,14 @@
-const $ = require('jquery');
+import $ from 'jquery';
 
 class BottomSlider {
   constructor(element) {
     this.element = element;
     this.trigger = this.element.find(".aid__question");
     this.content = this.trigger.next();
-    //this.content.attr('max-height', this.content.prop('scrollHeight') + 'px');
     this.bindEvents();
   }
   bindEvents(){
-    var that = this;
+    const that = this;
     this.trigger.on('click', this.toggleOpen.bind(that));
   }
 

@@ -72,3 +72,14 @@
   top: 50%;
   transform: translateY(-50%);
 }
+
+%pannel-white{
+  position: relative;
+  padding: 2.5rem 1.456rem;
+  background-color: white;
+  border: 1px solid transparent;
+  transition: all .3s ease-out;
+  cursor: pointer;
+  margin-bottom: 10px;
+  z-index: 0;
+}

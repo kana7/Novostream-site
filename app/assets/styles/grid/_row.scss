@@ -3,19 +3,23 @@
   margin-left: -($gridGutterWidth/2);
   margin-right: -($gridGutterWidth/2);
   @include clearfix;
+  &--no-offset, .row{
+    margin-left: 0;
+    margin-right: 0;
+  }
   &--gutters {
     margin-right: -30px;
   }
   &--gutters-large {
     margin-right: -100px;
   }
-  &--gutters>div {
+  &--gutters div[class^="row__"]{
     padding-right: 30px;
   }
-  &--gutters-large>div {
+  &--gutters-large div[class^="row__"]{
     padding-right: 100px;
   }
-  &--gutters-small>div {
+  &--gutters-small div[class^="row__"]{
     padding-right: 45px;
   }
   &__b-margin-util-medium {
@@ -99,4 +103,8 @@
       margin-bottom: 0;
     }
   }
+}
+
+.clearfix{
+  @include clearfix;
 }
