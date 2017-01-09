@@ -44,7 +44,7 @@
 </div>
 </div>
 </header>
-<section class="banner-page">
+<div class="banner-page">
   <picture>
     <img class="banner-page__img lazyload" data-src="./assets/images/Bandeau_kontakt.jpg" alt="">
   </picture>
@@ -57,55 +57,62 @@
       </div>
     </div>
   </div>
-</section>
-<section class="page-section page-section--cream page-section--bg-ns-icon lazyload">
+</div>
+<section class="page-section page-section--small-padding page-section--cream page-section--bg-ns-icon lazyload">
   <div class="wrapper">
     <div class="row">
       <ul class="breadcrumb">
-        <li>Startseite</li>
+        <li><a href="#">Startseite</a></li>
         <li>Kontakt</li>
       </ul>
     </div>
-    <div class="contact-form">
-      <div class="row row--gutters row--no-offset">
-        <div class="row__medium-8">
-          <div class="clearfix">
-            <h2 class="contact-form__title">Kontaktformular:</h2>
+    <div class="row">
+      <div class="contact-form">
+        <div class="row row--gutters row--no-offset">
+          <div class="row__medium-8">
+            <div class="clearfix">
+              <h2 class="contact-form__title">Kontaktformular:</h2>
+            </div>
+            <div class="clearfix">
+              <form method="POST" action="#" name="kontakt">
+                <div class="row__medium-6">
+                  <div class="input-group">
+                    <label for="" class="input-group__label">Name<span>*</span></label>
+                    <input type="text" class="input-group__input"/>
+                  </div>
+                  <div class="input-group">
+                    <label for="" class="input-group__label">E-Mail<span>*</span></label>
+                    <input type="text" class="input-group__input"/>
+                  </div>
+                  <div class="input-group input-group--no-margin">
+                    <label for="Telefon" class="input-group__label">Telefon<span>*</span></label>
+                    <input type="text" class="input-group__input"/>
+                  </div>
+                </div>
+                <div class="row__medium-6">
+                  <div class="input-group">
+                    <label for="" class="input-group__label">Kommentar</label>
+                    <textarea class="input-group__input input-group__input--text-area"></textarea>
+                  </div>
+                  <div class="input-group input-group--spread input-group--no-margin">
+                    <span class="input-group__required">* Pflichtfelder</span>
+                    <input type="submit" class="btn btn--grey input-group__submit" value="Absenden"/>
+                  </div>
+                </div>
+              </form>
+            </div>
           </div>
-          <div class="clearfix">
-            <form method="POST" action="#" name="kontakt">
-              <div class="row__medium-6">
-                <div class="input-group">
-                  <label for="" class="input-group__label">Name<span>*</span></label>
-                  <input type="text" class="input-group__input"/>
-                </div>
-                <div class="input-group">
-                  <label for="" class="input-group__label">E-Mail<span>*</span></label>
-                  <input type="text" class="input-group__input"/>
-                </div>
-                <div class="input-group input-group--no-margin">
-                  <label for="Telefon" class="input-group__label">Telefon<span>*</span></label>
-                  <input type="text" class="input-group__input"/>
-                </div>
-              </div>
-              <div class="row__medium-6">
-                <div class="input-group">
-                  <label for="" class="input-group__label">Kommentar</label>
-                  <textarea class="input-group__input input-group__input--text-area">At w3schools.com you will learn how to make a website. We offer free tutorials in all web development technologies.</textarea>
-                </div>
-                <div class="input-group input-group--spread input-group--no-margin">
-                  <span class="input-group__required">* Pflichtfelder</span>
-                  <input type="submit" class="btn btn--grey input-group__submit" value="Absenden"/>
-                </div>
-              </div>
-            </form>
+          <div class="row__medium-4">
+            <div class="contact-form__img">
+              <img src="./assets/images/mockup_kontakt.png" alt="">
+            </div>
           </div>
         </div>
-        <div class="row__medium-4">
-          <div class="contact-form__img">
-            <img src="./assets/images/mockup_kontakt.png" alt="">
-          </div>
-        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="map">
+
       </div>
     </div>
   </div>

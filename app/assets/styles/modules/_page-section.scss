@@ -1,5 +1,5 @@
 .page-section {
-  padding: 1.2rem;
+  padding: 1.2rem 0;
   &--cream {
     background-color: $white-cream;
   }
@@ -47,5 +47,8 @@
   }
   @include atMedium {
     padding: 3.125rem 0;
+    &--small-padding{
+      padding: 1.2rem 0;
+    }
   }
 }
