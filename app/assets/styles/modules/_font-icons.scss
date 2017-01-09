@@ -11,7 +11,6 @@
   font-style: normal;
 
 }
-
 [data-icon]:before {
   font-family: "novostream" !important;
   content: attr(data-icon);
@@ -24,7 +23,6 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 .icon{
   &:before{
     font-family: "novostream" !important;
@@ -52,5 +50,17 @@
   }
   &--question:before {
     content: "\65";
+  }
+  &--basket:before {
+    content: "\66";
+  }
+  &--privatetarife:before {
+    content: "\67";
+  }
+  &--spezialanwendungen:before {
+    content: "\68";
+  }
+  &--unternhementarife:before {
+    content: "\69";
   }
 }
