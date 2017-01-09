@@ -1,4 +1,6 @@
 .site-footer {
+  position: relative;
+  box-shadow: 0 0 10px 0px rgba(#000, 0.25);
   &__top {
     border-bottom: 3px solid $orange;
     padding: 8px 0;
@@ -13,7 +15,7 @@
   }
   &__bottom {
     padding: 14px 0;
-    background-color: $grey-light;
+    background-color: $grey-med;
     &__foot-note{
       @include vertical-align-middle;
     }

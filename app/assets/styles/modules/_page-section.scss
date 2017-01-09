@@ -8,9 +8,9 @@
     &.lazyloaded{
       &:before{
         content: "";
-        background: url('../../assets/images/Circle.png') no-repeat;
+        background: url('../../assets/images/Circle-crops.png') no-repeat;
         opacity: 0.3;
-        background-position: 50px 200px;
+        background-position: 50px 100%;
         background-clip: border-box;
         background-origin: content-box;
         top: 0;
