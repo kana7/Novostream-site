@@ -1,5 +1,5 @@
 body {
-    @include base-style();
+  @include base-style();
 }
 
 img{
@@ -10,12 +10,22 @@ img{
 
 a {
   color: inherit;
+  text-decoration: none;
+  &:hover {
     text-decoration: none;
-    &:hover {
-        text-decoration: none;
-        outline: 0;
-    }
+    outline: 0;
+  }
 }
 *{
   box-sizing: border-box;
+}
+.link{
+  display: block;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: $orange;
+}
+a.link:hover{
+  text-decoration: underline;
 }
