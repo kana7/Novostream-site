@@ -73,28 +73,32 @@
             <h2 class="contact-form__title">Kontaktformular:</h2>
           </div>
           <div class="clearfix">
-            <div class="row__medium-6">
-              <div class="input-group">
-                <label for="" class="input-group__label">Name<span>*</span></label>
-                <input type="text" class="input-group__input"/>
+            <form method="POST" action="#" name="kontakt">
+              <div class="row__medium-6">
+                <div class="input-group">
+                  <label for="" class="input-group__label">Name<span>*</span></label>
+                  <input type="text" class="input-group__input"/>
+                </div>
+                <div class="input-group">
+                  <label for="" class="input-group__label">E-Mail<span>*</span></label>
+                  <input type="text" class="input-group__input"/>
+                </div>
+                <div class="input-group input-group--no-margin">
+                  <label for="Telefon" class="input-group__label">Telefon<span>*</span></label>
+                  <input type="text" class="input-group__input"/>
+                </div>
               </div>
-              <div class="input-group">
-                <label for="" class="input-group__label">E-Mail<span>*</span></label>
-                <input type="text" class="input-group__input"/>
+              <div class="row__medium-6">
+                <div class="input-group">
+                  <label for="" class="input-group__label">Kommentar</label>
+                  <textarea class="input-group__input input-group__input--text-area">At w3schools.com you will learn how to make a website. We offer free tutorials in all web development technologies.</textarea>
+                </div>
+                <div class="input-group input-group--spread input-group--no-margin">
+                  <span class="input-group__required">* Pflichtfelder</span>
+                  <input type="submit" class="btn btn--grey input-group__submit" value="Absenden"/>
+                </div>
               </div>
-              <div class="input-group">
-                <label for="Telefon" class="input-group__label">Telefon<span>*</span></label>
-                <input type="text" class="input-group__input"/>
-              </div>
-            </div>
-            <div class="row__medium-6">
-              <div class="input-group">
-                <label for="" class="input-group__label">Kommentar</label>
-                <textarea class="input-group__input">
-                  At w3schools.com you will learn how to make a website. We offer free tutorials in all web development technologies.
-                </textarea>
-              </div>
-            </div>
+            </form>
           </div>
         </div>
         <div class="row__medium-4">

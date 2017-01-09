@@ -1,0 +1,16 @@
+.contact-form{
+  @include clearfix;
+  @extend %pannel-white;
+  padding-top: 27px;
+  padding-bottom: 26px;
+  cursor: auto;
+  &__title{
+    text-transform: uppercase;;
+    font-size: 1.125rem;
+    margin-top: 0;
+  }
+  &__img{
+    display: inline-block;
+    float: right;
+  }
+}

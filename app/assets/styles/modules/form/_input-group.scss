@@ -1,0 +1,60 @@
+.input-group{
+  margin-bottom: 20px;
+  &--no-margin{margin: 0;}
+  .flexbox &--spread{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .no-flexbox &--spread{
+    @include clearfix;
+    text-align: right;
+    .input-group__submit{vertical-align: middle;}
+    .input-group__required{line-height: 40px; float: left;}
+  }
+  &__label{
+    display: block;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    span{color: red;}
+  }
+  &__required{
+    color: red;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    text-align: left;
+
+  }
+  &__input{
+    display: block;
+    width: 100%;
+    min-height: 42px;
+    border: 1px solid darken($white-cream, 10%);
+    border-radius: 6px;
+    padding: 0 5px;
+    font-size: 0.9375rem;
+    font-weight: 300;
+    transition: border .3s ease-out;
+    &:focus{
+      outline: 0;
+      border-color: $orange;
+      border-width: 1px;
+    }
+    &--text-area{
+      resize: vertical;
+      padding-top: 5px;
+      height: 160px;
+    }
+  }
+  &__submit{
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 1rem;
+    height: 40px;
+    line-height: 43px;
+    padding: 0 3.445rem;
+  }
+}
