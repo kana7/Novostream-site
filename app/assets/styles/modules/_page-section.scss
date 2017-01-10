@@ -32,8 +32,9 @@
     padding: 2.5rem 0;
     &.lazyloaded{
       background: #1c3647 url("../../assets/images/BG_parabole.jpg") no-repeat;
-      background-size: 100% auto;
-      background-position: top;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
     }
   }
   &--no-b-padding-until-medium {

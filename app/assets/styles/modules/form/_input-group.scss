@@ -49,6 +49,21 @@
       height: 160px;
     }
   }
+  &__radio{
+    input{
+      display: none;
+      &:not(:checked)+label{
+        @extend .btn--grey-light;
+      }
+      &:checked+label{
+        @extend .btn--orange;
+      }
+    }
+    label{
+      @extend .btn;
+      width: 54px;
+    }
+  }
   &__submit{
     border: none;
     outline: 0;

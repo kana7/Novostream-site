@@ -8,14 +8,14 @@
     counter-increment: product-services-counter;
     text-align: right;
     &:not(:last-child){
-      border-bottom: 1px dotted $grey-light;
+      border-bottom: 1px dotted $grey-light-x;
     }
   }
   &__content{
     position: relative;
     padding-left: 3.4375rem;
-    color: $grey-med;
     text-align: left;
+    color: $grey-light;
     &:before{
       content: counter(product-services-counter);
       position: absolute;
@@ -35,11 +35,14 @@
   &__title{
     font-size: 1.25rem;
     margin-top: 0;
+    color: $grey-med;
   }
   &__input{
     display: inline-block;
-    height: 40px;
-    width: 80px;
-    background-color: $orange;
+    text-transform: uppercase;
+    label{
+      margin-left: 13px;
+      border-radius: 5px;
+    }
   }
 }
