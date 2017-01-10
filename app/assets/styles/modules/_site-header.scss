@@ -16,7 +16,22 @@
     }
     &__bottom {
         padding: 28px 0;
-        background-color: white;
+          &.lazyloaded{
+          &:before{
+            content: "";
+            opacity: 0.3;
+            background: white url('../../assets/images/Circle2.png') no-repeat;
+            background-position: -35% 11%;
+            background-clip: border-box;
+            background-origin: content-box;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            position: absolute;
+            z-index: -1;
+          }
+        }
         &__logo{
           display: inline-block;
         }
