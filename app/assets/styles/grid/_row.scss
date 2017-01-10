@@ -42,6 +42,7 @@
     &>div{
       float: none;
       display: flex;
+      &.flex-direction-column{flex-direction: column;}
     }
   }
   .flexbox &--equal-height-at-large {
