@@ -34,7 +34,7 @@
         display: block;
         color: $orange;
       }
-      &.active{color: $orange;}
+      &.active{color: $orange; cursor: default;}
       &:not(.active):hover{
         span:not(.icon){top: -35px;}
       }

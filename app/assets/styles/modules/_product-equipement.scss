@@ -1,3 +1,22 @@
 .product-equipement{
   @extend %pannel-white;
+  &__title{
+    color: $orange;
+  }
+  &__txt{
+    strong{display: block; margin-bottom: 3px;}
+    p{margin: 8px 0;}
+    p:last-child{margin-bottom: 0;}
+  }
+  &__img{
+    height: 100%;
+    text-align: center;
+    .flexbox &{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    img{display: inline-block;}
+  }
 }
