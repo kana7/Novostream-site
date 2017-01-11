@@ -11,22 +11,3 @@
     font-size: 1.125rem;
     margin-top: 0;
 }
-
-.product-title{
-  padding: 12px 0;
-  background-color: $orange;
-  &__title, &__btn{
-    display: inline-block;
-  }
-  &__title{
-    margin: 0;
-    color: white;
-    line-height: 40px;
-    float: left;
-  }
-  &__btn{
-    padding: .75rem;
-    border-radius: 5px;
-    float: right;
-  }
-}
