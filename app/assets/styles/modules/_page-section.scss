@@ -37,6 +37,16 @@
       background-attachment: fixed;
     }
   }
+  &--bg-sky {
+    min-height: 210px;
+    padding: 2.5rem 0;
+    &.lazyloaded{
+      background: #1c3647 url("../../assets/images/BG_terre.jpg") no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+  }
   &--no-b-padding-until-medium {
     padding-bottom: 0;
     @include atMedium {

@@ -15,4 +15,21 @@
     border-radius: 5px;
     float: right;
   }
+  &__links{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: white;
+    @extend .page-title;
+    .flexbox &{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+    &__icon{
+      font-size: 1.3em;
+      padding-right: 3px;
+      vertical-align: -7%;
+    }
+  }
 }
