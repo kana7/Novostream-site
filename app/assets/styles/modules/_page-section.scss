@@ -43,9 +43,12 @@
     &.lazyloaded{
       background: #1c3647 url("../../assets/images/BG_terre.jpg") no-repeat;
       background-size: cover;
-      background-position: center;
+      background-position: bottom;
       background-attachment: fixed;
     }
+  }
+  &--reverse-b-margin{
+    margin-bottom: -35px;
   }
   &--no-b-padding-until-medium {
     padding-bottom: 0;

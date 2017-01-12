@@ -1,24 +1,42 @@
 .product-tile{
   @extend %pannel-white;
   padding: 0;
+  margin-bottom: 35px; 
   &__header{
     border-bottom: 1px dotted $orange;
     @include clearfix;
-    padding: 1.25rem 1.25rem 0;
+    padding: 13px 1.25rem 13px;
     .flexbox &{
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      align-items: center;
+      align-items: flex-start;
     }
   }
   &__title{
     color: $orange;
     margin: 0;
+    .flexbox &{
+      flex: 1;
+    }
   }
   &__price{
     display: inline-block;
     margin: 0;
     font-size: 0.875rem;
+    .price{font-size: 1.6em;}
+  }
+  &__body{padding: 30px 30px 25px 50px;}
+  &__img, &__content{display: inline-block;}
+  &__content{float: right;}
+  &__img{vertical-align: top;}
+  &__list{
+    @extend .product-desc__list;
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 20px;
+    li:not(:first-child) {
+    margin-top: 16px;
+}
   }
 }

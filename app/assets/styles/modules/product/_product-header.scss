@@ -32,4 +32,21 @@
       vertical-align: -7%;
     }
   }
+  &--selected-list{
+    border-bottom: 5px solid white;
+    .product-header__links{
+      position: relative;
+      &:after{
+        content:"";
+        width:0;
+        height:0;
+        position: absolute;
+        bottom: -27px;
+        left: 155px;
+        border-left:13px solid transparent;
+        border-right:13px solid transparent;
+        border-top:12px solid white;
+      }
+    }
+  }
 }
