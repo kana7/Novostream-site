@@ -1,7 +1,9 @@
 .product-tile{
   @extend %pannel-white;
   padding: 0;
-  margin-bottom: 35px; 
+  margin-bottom: 35px;
+  background-color: white;
+  cursor: default;
   &__header{
     border-bottom: 1px dotted $orange;
     @include clearfix;
@@ -26,7 +28,26 @@
     font-size: 0.875rem;
     .price{font-size: 1.6em;}
   }
-  &__body{padding: 30px 30px 25px 50px;}
+  &__body{
+    padding: 30px 30px 25px 50px;
+    &.lazyloaded{
+      &:before{
+        content: "";
+        background: url('../../assets/images/Circle2.png') no-repeat;
+        opacity: 0.3;
+        background-position: 120% 225px;
+        background-size: 200px auto;
+        background-clip: border-box;
+        background-origin: content-box;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+      }
+    }
+  }
   &__img, &__content{display: inline-block;}
   &__content{float: right;}
   &__img{vertical-align: top;}
@@ -36,7 +57,14 @@
     margin: 0;
     margin-bottom: 20px;
     li:not(:first-child) {
-    margin-top: 16px;
-}
+      margin-top: 16px;
+    }
+  }
+  &:hover{
+    box-shadow: 0 4px 0 0 $blue;
+  }
+  &:not(:hover){
+    filter: grayscale(1);
+    opacity: 0.9;
   }
 }
