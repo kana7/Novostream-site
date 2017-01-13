@@ -14,10 +14,13 @@
 
 .banner-home {
   @include banner;
-  position: relative;
   background-color: $grey-dark;
-  min-height: 200px;
   box-shadow: inset 0 0 30px 1px rgba(0, 0, 0, 0.7);
+  /* SLIDER STYLE */
+  &>div>div{
+    position: relative;
+    min-height: 200px;
+  }
   &__top-image{
     position: absolute;
     top: 0;
