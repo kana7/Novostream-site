@@ -63,7 +63,7 @@
   &:hover{
     box-shadow: 0 4px 0 0 $blue;
   }
-  &:not(:hover){
+  &--no-hover{
     filter: grayscale(1);
     opacity: 0.9;
   }
