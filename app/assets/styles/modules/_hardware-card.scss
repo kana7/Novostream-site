@@ -1,0 +1,11 @@
+.hardware-card, .hardware-aside{
+  @extend %pannel-white;
+  padding: 0;
+}
+
+.hardware-card{
+  &__header{
+    border-bottom: 1px solid $grey-light-x;
+    padding: 20px 20px 10px;
+  }
+}
