@@ -2,7 +2,7 @@ import BottomSlider from './modules/BottomSlider';
 import productTileHoverEffect from './modules/productTileHoverEffect';
 import $ from 'jquery';
 
-$(".aid").each(()=>{
+$(".aid").each(function(){
   new BottomSlider($(this));
 });
 if($('.product-tile')){
