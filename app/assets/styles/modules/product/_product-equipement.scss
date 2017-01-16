@@ -1,5 +1,6 @@
 .product-equipement{
   @extend %pannel-white;
+  cursor: default;
   &__title{
     color: $orange;
   }
