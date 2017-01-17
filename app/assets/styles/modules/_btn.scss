@@ -1,33 +1,45 @@
 .btn {
   display: inline-block;
   padding: .563rem .625rem;
-    text-decoration: none;
-    font-size: .875rem;
-    font-weight: 600;
-    text-align: center;
-    border-radius: 8px;
-    background-color: white;
-    transition: all .3s ease-out;
-    cursor: pointer;
-    .icon{padding-left: 5px;}
-    &--blue{
-      background-color: $blue;
-      color: white;
+  text-decoration: none;
+  font-size: .875rem;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 8px;
+  background-color: white;
+  transition: all .5s ease-out;
+  cursor: pointer;
+  .icon{padding-left: 5px;}
+  &--blue{
+    background-color: $blue;
+    color: white;
+    &:hover{
+      background-color: lighten($blue, 8%);
     }
-    &--orange{
-      background-color: $orange;
-      color: white;
+  }
+  &--orange{
+    background-color: $orange;
+    color: white;
+    &:hover{
+      background-color: lighten($orange, 8%);
     }
-    &--grey{
-      background-color: $grey-med;
-      color: white;
+  }
+  &--grey{
+    background-color: $grey-med;
+    color: white;
+    &:hover{
+      background-color: lighten($grey-med, 8%);
     }
-    &--grey-light{
-      background-color: $grey-light-x;
-      color: white;
+  }
+  &--grey-light{
+    background-color: $grey-light-x;
+    color: white;
+    &:hover{
+      background-color: lighten($grey-light-x, 8%);
     }
-    &--large{
-      font-size: 1rem;
-      padding: .9rem 2.25rem .8rem;
-    }
+  }
+  &--large{
+    font-size: 1rem;
+    padding: .9rem 2.25rem .8rem;
+  }
 }
