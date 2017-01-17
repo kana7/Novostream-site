@@ -1,45 +1,77 @@
 .btn {
+  position: relative;
   display: inline-block;
-  padding: .563rem .625rem;
+  overflow: hidden;
+  padding: 0 .625rem;
   text-decoration: none;
   font-size: .875rem;
   font-weight: 600;
   text-align: center;
   border-radius: 8px;
+  height: 2.1875rem;
+  line-height: 2.1875rem;
   background-color: white;
-  transition: all .5s ease-out;
+  transition: all .35s ease;
   cursor: pointer;
+  text:{
+    decoration: none;
+    shadow: 0 1px 3px rgba(black, .35);
+  }
+  &[data-text]{
+    box-shadow: 0 0 3px rgba(black, .5) inset;
+    &:before{
+      content: attr(data-text);
+      color: #DEEFF5;
+      position: absolute;
+      top: -2.75em;
+      text-align: center;
+      width: 100%;
+      left: 0;
+      right: 0;
+    }
+  }
   .icon{padding-left: 5px;}
   &--blue{
     background-color: $blue;
     color: white;
     &:hover{
-      background-color: lighten($blue, 8%);
+      background-color: darken($blue, 8%);
     }
   }
   &--orange{
     background-color: $orange;
     color: white;
     &:hover{
-      background-color: lighten($orange, 8%);
+      background-color: darken($orange, 8%);
     }
   }
   &--grey{
     background-color: $grey-med;
     color: white;
     &:hover{
-      background-color: lighten($grey-med, 8%);
+      background-color: darken($grey-med, 8%);
     }
   }
   &--grey-light{
     background-color: $grey-light-x;
     color: white;
     &:hover{
-      background-color: lighten($grey-light-x, 8%);
+      background-color: darken($grey-light-x, 8%);
     }
   }
   &--large{
     font-size: 1rem;
-    padding: .9rem 2.25rem .8rem;
+    padding: 0 2.25rem;
+    height: 2.875rem;
+    line-height: 2.875rem;
+    &[data-text]:hover{
+      line-height: 8.45rem !important;
+    }
+  }
+  &[data-text]{
+    &:hover{
+      box-shadow: 0 0 3px rgba(black, .5) inset;
+      line-height: 6.95rem;
+    }
   }
 }

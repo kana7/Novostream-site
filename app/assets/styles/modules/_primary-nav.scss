@@ -29,7 +29,7 @@
       display: block;
       line-height: 35px;
       padding: 0 1.125rem;
-      &>span{position: relative; top: 0; transition: all .3s ease-out;}
+      &>span{position: relative; top: 0; transition: all .35s ease;}
       &>span:not(.icon):after{
         content: attr(title);
         display: block;

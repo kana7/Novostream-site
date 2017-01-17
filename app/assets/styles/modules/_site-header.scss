@@ -25,6 +25,7 @@
   }
   &__bottom {
     padding: 28px 0;
+    transition: height .3s ease-out;
     &.lazyloaded{
       &:before{
         content: "";
