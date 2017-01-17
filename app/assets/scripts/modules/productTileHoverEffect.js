@@ -1,6 +1,6 @@
 import $ from 'jquery';
 
-var productTileHoverEffect = function(){
+var ProductTileHoverEffect = function(){
   $('.product-tile').on('mouseenter', event=>{
     $('.product-tile').not($(event.target).closest('.product-tile')).addClass('product-tile--no-hover');
   });
@@ -9,4 +9,4 @@ var productTileHoverEffect = function(){
   });
 };
 
-export default productTileHoverEffect;
+export default ProductTileHoverEffect;
