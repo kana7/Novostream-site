@@ -6,10 +6,12 @@
   background-color: white;
   z-index: 2;
   box-shadow: 0 0 10px 0px rgba(#000, 0.25);
+  transition: background .3s ease-out;
   &__top {
     padding: 5px 0;
     background-color: $grey-dark;
     height: 29px;
+    overflow: hidden;
     transition: height .3s ease-out;
 
     &__links {
@@ -47,6 +49,7 @@
   }
   &--minimize{
     position: fixed;
+    background-color: rgba(555,555,555, 0.85);
     .site-header__top{
       height: 0;
       padding: 0;
