@@ -22,12 +22,11 @@ class StickyHeader {
             handler: function(direction) {
                 if (direction == "down") {
                     that.siteHeader.addClass("site-header--minimize");
-                    alert('minimize!!!');
                 } else {
-                  alert('NOT minimize!!!');
                     that.siteHeader.removeClass("site-header--minimize");
                 }
-            }
+            },
+            offset: 20
         });
     }
 }

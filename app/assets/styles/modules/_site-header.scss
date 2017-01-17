@@ -1,39 +1,64 @@
 .site-header {
-    position: relative;
-    z-index: 2;
-    box-shadow: 0 0 10px 0px rgba(#000, 0.25);
-    &__top {
-      padding: 5px 0;
-        background-color: $grey-dark;
-        &__links {
-            float: right;
-            margin: 0;
-            li {
-                display: inline-block;
-                &:not(:first-child){margin-left: 2.375rem;}
-            }
-        }
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 2;
+  box-shadow: 0 0 10px 0px rgba(#000, 0.25);
+  &__top {
+    padding: 5px 0;
+    background-color: $grey-dark;
+    height: 29px;
+    transition: height .3s ease-out;
+
+    &__links {
+      float: right;
+      margin: 0;
+      li {
+        display: inline-block;
+        &:not(:first-child){margin-left: 2.375rem;}
+      }
     }
-    &__bottom {
-        padding: 28px 0;
-          &.lazyloaded{
-          &:before{
-            content: "";
-            opacity: 0.3;
-            background: white url('../../assets/images/Circle2.png') no-repeat;
-            background-position: -35% 11%;
-            background-clip: border-box;
-            background-origin: content-box;
-            top: 0;
-            left: 0;
-            bottom: 0;
-            right: 0;
-            position: absolute;
-            z-index: -1;
-          }
-        }
-        &__logo{
-          display: inline-block;
-        }
+  }
+  &__bottom {
+    padding: 28px 0;
+    &.lazyloaded{
+      &:before{
+        content: "";
+        opacity: 0.3;
+        background: white url('../../assets/images/Circle2.png') no-repeat;
+        background-position: -35% 11%;
+        background-clip: border-box;
+        background-origin: content-box;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+      }
     }
+    &__logo{
+      display: inline-block;
+      width: 367px;
+      transition: width .3s ease-out;
+    }
+  }
+  &--minimize{
+    position: fixed;
+    .site-header__top{
+      height: 0;
+      padding: 0;
+    }
+    .site-header__bottom{
+      padding: 10px 0;
+    }
+    .site-header__bottom__logo{
+      width: 265px;
+    }
+    .site-header__bottom__nav{
+      li{font-size: 1.125rem;}
+    }
+  }
 }
