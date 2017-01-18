@@ -44,5 +44,14 @@
       margin-left: 13px;
       border-radius: 5px;
     }
+    input[value="true"]:checked{
+      .product-services__details{
+        display: block;
+      }
+    }
+  }
+  &__details{
+    display: none;
+    &--is-open{display: block;}
   }
 }

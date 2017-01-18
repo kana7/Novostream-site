@@ -6,7 +6,7 @@
   background-color: white;
   z-index: 2;
   box-shadow: 0 0 10px 0px rgba(#000, 0.25);
-  transition: background .3s ease;
+  transition: background .3s ease, top .3s ease;
   &__top {
     padding: 5px 0;
     background-color: $grey-dark;
@@ -50,10 +50,7 @@
   }
   &--minimize{
     background-color: rgba(555,555,555, 0.85);
-    .site-header__top{
-      height: 0;
-      padding: 0;
-    }
+    top: -29px;
     .site-header__bottom{
       padding: 10px 0;
     }
