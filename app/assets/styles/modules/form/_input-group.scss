@@ -57,6 +57,7 @@
       }
       &:checked+label{
         @extend .btn--orange;
+        &[data-text]{line-height: 6.95rem;}
       }
     }
     label{
