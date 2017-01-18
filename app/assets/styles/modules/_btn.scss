@@ -20,7 +20,6 @@
   &[data-text]{
     &:before{
       content: attr(data-text);
-      color: #DEEFF5;
       position: absolute;
       top: -2.75em;
       text-align: center;
@@ -43,6 +42,9 @@
     &:hover{
       background-color: darken($orange, 8%);
     }
+  }
+  &--upercase{
+    text-transform: uppercase;
   }
   &--grey{
     background-color: $grey-med;

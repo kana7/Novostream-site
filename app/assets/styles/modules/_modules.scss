@@ -6,6 +6,7 @@
 @import "./_page-section";
 @import "./_btn";
 @import "./_table";
+@import "./_list";
 @import "./_page-title";
 @import "./_site-footer";
 @import "./_banner";
@@ -15,5 +16,6 @@
 @import "./_aid";
 @import "form/_form";
 @import "./_map";
-@import "product/_product";
-@import "./_hardware-card";
+@import "./product/_product";
+@import "./hardware/_hardware";
+@import "./_price-tag";

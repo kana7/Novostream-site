@@ -1,0 +1,18 @@
+.hardware-selection{
+  &__nav{
+    display: block;
+    border-bottom: 4px solid $orange;
+    margin-bottom: 0;
+    li{display: inline-block;}
+  }
+  &__content{
+    padding: 10px 0 25px;
+    background-color: $white-cream;
+    &>div[data-text]{
+      .hardware-thumb:not(:first-child){
+        display: inline-block;
+        border-left: 1px dotted $orange;
+      }
+    }
+  }
+}

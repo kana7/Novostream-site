@@ -1,0 +1,16 @@
+.list{
+  list-style: none;
+  padding:0;
+  margin:0;
+  li:not(:first-child){
+    margin-top: 18px;
+  }
+  li {
+    padding-left: 1rem;
+    text-indent: -.7rem;
+  }
+  li:before {
+    content: "• ";
+    color: $orange;
+  }
+}

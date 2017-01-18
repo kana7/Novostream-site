@@ -1,0 +1,22 @@
+.hardware-thumb{
+  display: inline-block;
+  position: relative;
+  max-width: 420px;
+  padding: 0 20px;
+  &__img{
+    margin: 0 auto;
+    max-height: 135px;
+  }
+  &__title{
+    font-size: 0.9375rem;
+    color: $orange;
+  }
+  &__price-tag{
+    display: inline-block;
+    float: left;
+  }
+  &__btn{
+    display: inline-block;
+    float: right;
+  }
+}

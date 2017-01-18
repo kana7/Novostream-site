@@ -1,0 +1,15 @@
+.price-tag{
+  &__btn{
+    margin-top: 10px;
+  }
+}
+
+.price{
+  font-size: 2.6em;
+  font-weight: 600;
+  color: $orange;
+  sup{
+    top: -0.74em;
+    font-size: 0.5em;
+  }
+}
