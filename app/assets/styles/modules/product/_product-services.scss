@@ -7,6 +7,7 @@
     padding: 2.8125rem 0 1.5625rem;
     counter-increment: product-services-counter;
     text-align: right;
+    transition: all .3s ease;
     &:not(:last-child){
       border-bottom: 1px dotted $grey-light-x;
     }
@@ -39,19 +40,29 @@
   }
   &__input{
     display: inline-block;
+    position: relative;
+    z-index: 1;
     text-transform: uppercase;
     label{
       margin-left: 13px;
       border-radius: 5px;
     }
-    input[value="true"]:checked{
-      .product-services__details{
-        display: block;
-      }
-    }
   }
   &__details{
-    display: none;
-    &--is-open{display: block;}
+    position: relative;
+    visibility: hidden;
+    max-height: 0;
+    opacity: 0;
+    z-index: 0;
+    overflow: hidden;
+    transform-origin: center;
+    transform: translateY(-25px);
+    transition: all .3s ease;
+    &--is-open{
+      height:auto;
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(0px);
+    }
   }
 }

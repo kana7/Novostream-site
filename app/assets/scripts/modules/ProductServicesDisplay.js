@@ -15,12 +15,13 @@ class ProductServicesDisplay {
 
     toggleDetailsDisplay() {
         if(this.input.filter(':checked').val() === "true"){
+          this.details[0].style.maxHeight = this.details.prop('scrollHeight') + 'px'
           this.details.addClass('product-services__details--is-open');
         }else{
+          this.details[0].style.maxHeight = null;
           this.details.removeClass('product-services__details--is-open');
         }
     }
-    
 }
 
 export default ProductServicesDisplay;
