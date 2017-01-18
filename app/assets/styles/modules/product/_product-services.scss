@@ -1,27 +1,24 @@
 .product-services{
-  border: 2px solid $orange;
-  border-radius: 2px;
-  padding: 0 2.8125rem;
   counter-reset: product-services-counter;
   &__item{
-    padding: 2.8125rem 0 1.5625rem;
+    border: 2px solid $orange;
+    border-radius: 2px;
+    padding: 2.8125rem 2.8125rem 1.5625rem;
     counter-increment: product-services-counter;
     text-align: right;
     transition: all .3s ease;
-    &:not(:last-child){
-      border-bottom: 1px dotted $grey-light-x;
-    }
+    margin-bottom: 30px;
   }
   &__content{
     position: relative;
-    padding-left: 3.4375rem;
+    padding-left: 3.2rem;
     text-align: left;
     color: $grey-light;
     &:before{
       content: counter(product-services-counter);
       position: absolute;
       top: -8px;
-      left: 5px;
+      left: -5px;
       color: white;
       font-size: 1.25rem;
       font-weight: 600;
@@ -50,6 +47,7 @@
   }
   &__details{
     position: relative;
+    text-align: left;
     visibility: hidden;
     max-height: 0;
     opacity: 0;
