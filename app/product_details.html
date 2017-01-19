@@ -243,12 +243,13 @@ Satellitenfinder, doppeladriges Koaxialkabel 20 Meter
           <div class="product-services__details">
             <div class="hardware-selection">
               <ul class="hardware-selection__nav">
-                <li><a href="#" data-link="0">Heimnetzwerk</a></li>
-                <li><a href="#" data-link="1">TV Ausstattung</a></li>
-                <li><a href="#" data-link="0">Montagematerial</a></li>
+                <li class="is-active" data-link="0"><a href="#">Heimnetzwerk</a></li>
+                <li data-link="1"><a href="#">TV Ausstattung</a></li>
+                <li data-link="2"><a href="#">Montagematerial</a></li>
+                <li class="hardware-selection__nav__arrow">&nbsp;</li>
               </ul>
               <div class="hardware-selection__content">
-                <div data-link="0">
+                <div data-link="0" class="is-visible">
                   <div class="hardware-selection__cell">
                     <div class="hardware-thumb">
                       <img class="hardware-thumb__img" src="./assets/images/modem.png" alt="">
@@ -328,6 +329,8 @@ Satellitenfinder, doppeladriges Koaxialkabel 20 Meter
                     </div>
                   </div>
                 </div>
+                <div data-link="1"><p>This is a hardware product list</p></div>
+                <div data-link="2"><p>This is another hardware product list</p></div>
               </div>
             </div>
           </div>

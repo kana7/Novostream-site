@@ -3,14 +3,57 @@
     display: block;
     border-bottom: 4px solid $orange;
     margin-bottom: 0;
-    li{display: inline-block;}
+    padding: 0;
+    padding-bottom: 18px;
+    position: relative;
+    overflow: hidden;
+    zoom: 1;
+    li:not(.hardware-selection__nav__arrow){
+      display: inline-block;
+      font-size: 1.125rem;
+      font-weight: 600;
+      padding: 0 1.25rem;
+      transition: color .3s ease-out;
+      &.is-active, &:hover{color: $orange;}
+    }
+    &__arrow{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: 3;
+      margin: 0;
+      border: 0;
+      width: 0;
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+      border-bottom: 9px solid $orange;
+      padding: 0 !important;
+      overflow: hidden;
+      background-color: transparent;
+      transition: left .5s ease;
+    }
+    li:nth-child(1).is-active~.hardware-selection__nav__arrow{
+      left: 72px;
+    }
+    li:nth-child(2).is-active~.hardware-selection__nav__arrow{
+      left: 248px;
+    }
+    li:nth-child(3).is-active~.hardware-selection__nav__arrow{
+      left: 434px;
+    }
   }
   &__content{
     padding: 10px 0 25px;
     background-color: $white-cream;
     overflow-x: auto;
     overflow-y: hidden;
-    div[data-link]{display: table;}
+    div[data-link]{
+      display: none;
+      min-height: 253px;
+     &.is-visible{
+       display: table;
+     }
+    }
   }
   &__cell{
     display: table-cell;
