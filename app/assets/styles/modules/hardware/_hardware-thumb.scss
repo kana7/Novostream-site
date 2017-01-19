@@ -1,8 +1,6 @@
 .hardware-thumb{
-  display: inline-block;
   position: relative;
-  max-width: 420px;
-  padding: 0 20px;
+  min-width: 325px;
   &__img{
     margin: 0 auto;
     max-height: 135px;
@@ -10,13 +8,26 @@
   &__title{
     font-size: 0.9375rem;
     color: $orange;
+    margin-bottom: 5px;
   }
   &__price-tag{
     display: inline-block;
-    float: left;
+    font-size: 1rem;
+    color: $orange;
+    .price{
+      font-size: 1.625rem;
+    }
+    p{
+      margin: 0;
+      margin-top: 3px;
+      font-size: 0.75rem;
+      color: $grey-med;
+    }
   }
   &__btn{
+    position: absolute;
+    bottom: 0;
+    right: 0;
     display: inline-block;
-    float: right;
   }
 }

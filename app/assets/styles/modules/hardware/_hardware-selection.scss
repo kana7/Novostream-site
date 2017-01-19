@@ -8,11 +8,13 @@
   &__content{
     padding: 10px 0 25px;
     background-color: $white-cream;
-    &>div[data-text]{
-      .hardware-thumb:not(:first-child){
-        display: inline-block;
-        border-left: 1px dotted $orange;
-      }
-    }
+    overflow-x: auto;
+    overflow-y: hidden;
+    div[data-link]{display: table;}
+  }
+  &__cell{
+    display: table-cell;
+    padding: 0 20px;
+    &:not(:first-child){border-left: 1px dotted $orange;}
   }
 }
