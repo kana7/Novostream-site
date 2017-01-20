@@ -1,6 +1,12 @@
 .hardware-thumb{
   position: relative;
   min-width: 325px;
+  &--bg-white{
+    @extend %pannel-white;
+    min-width: none;
+    padding: 0;
+    cursor: default;
+  }
   &__img{
     margin: 0 auto;
     max-height: 135px;
@@ -9,6 +15,11 @@
     font-size: 0.9375rem;
     color: $orange;
     margin-bottom: 5px;
+  }
+  &__list{
+    font-size: 0.875rem;
+    margin: 15px 0;
+    li:not(:first-child){margin-top: 5px;}
   }
   &__price-tag{
     display: inline-block;
@@ -29,5 +40,18 @@
     bottom: 0;
     right: 0;
     display: inline-block;
+  }
+  &--home{
+    margin-bottom: 40px;
+    padding-top: 10px;
+    &:hover{
+          box-shadow: 0 4px 0 0 $blue;
+          .btn{background-color: $blue}
+
+    }
+    &__content{
+      border-top: 1px dotted $orange;
+      padding: 10px;
+    }
   }
 }
