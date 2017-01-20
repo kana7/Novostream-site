@@ -3,6 +3,9 @@
   &--cream {
     background-color: $white-cream;
   }
+  &--no-b-padding{
+    padding-bottom: 0 !important;
+  }
   &--bg-ns-icon{
     position: relative;
     &.lazyloaded{
