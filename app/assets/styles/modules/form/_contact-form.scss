@@ -6,7 +6,12 @@
   cursor: auto;
   margin-bottom: 40px;
   &__img{
-    display: inline-block;
+    display: none;
     float: right;
+  }
+  @include atLarge{
+    &__img{
+      display: inline-block;
+    }
   }
 }
