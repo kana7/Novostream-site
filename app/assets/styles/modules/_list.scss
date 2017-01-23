@@ -8,7 +8,6 @@
   &>li {
     padding-left: 1rem;
     text-indent: -.7rem;
-    @include ellipsis;
   }
   &>li:not(&__empty):before {
     content: "• ";
@@ -17,5 +16,17 @@
   &>li.list__empty:before{
     content: "\00a0";
     line-height: 1rem;
+  }
+  &--ellipsis{
+    &>li{
+        @include ellipsis;
+    }
+  }
+  @include atSmall{
+    &--ellipsis-at-small{
+        &>li{
+          @include ellipsis;
+        }
+    }
   }
 }
