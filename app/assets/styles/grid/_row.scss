@@ -1,21 +1,33 @@
 .row {
   /*Container de ligne*/
-  margin-left: -($gridGutterWidth/2);
-  margin-right: -($gridGutterWidth/2);
+  @include atLarge{
+    margin-left: -($gridGutterWidth/2);
+    margin-right: -($gridGutterWidth/2);
+  }
   @include clearfix;
   &--no-offset, .row{
     margin-left: 0;
     margin-right: 0;
   }
-  &--gutters {
-    margin-right: -30px;
+  @include atMedium{
+    &--gutters div[class^="row__"]{
+      padding-right: 20px;
+    }
+    &--gutters {
+      margin-right: -20px;
+    }
+  }
+  @include atLarge{
+    &--gutters div[class^="row__"]{
+      padding-right: 30px;
+    }
+    &--gutters {
+      margin-right: -30px;
+    }
   }
   &--relative{position: relative;}
   &--gutters-large {
     margin-right: -65px;
-  }
-  &--gutters div[class^="row__"]{
-    padding-right: 30px;
   }
   &--gutters-large div[class^="row__"]{
     padding-right: 65px;

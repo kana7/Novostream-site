@@ -1,6 +1,6 @@
 .product-tile{
   @extend %pannel-white;
-  padding: 0;
+  padding: 0 !important;
   margin-bottom: 35px;
   background-color: white;
   cursor: default;

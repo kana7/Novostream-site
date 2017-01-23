@@ -9,8 +9,12 @@
     padding-left: 1rem;
     text-indent: -.7rem;
   }
-  li:before {
+  li:not(&__empty):before {
     content: "• ";
     color: $orange;
+  }
+  &__empty:before{
+    content: "\00a0";
+    line-height: 1rem;
   }
 }

@@ -25,10 +25,10 @@
 }
 
 @mixin base-style(){
-    font-family: $font-stack;
-    font-size: $font-size;
-    color: $font-color;
-    line-height: $line-height;
+  font-family: $font-stack;
+  font-size: $font-size;
+  color: $font-color;
+  line-height: $line-height;
 }
 
 //queries for the grid
@@ -46,13 +46,13 @@
 
 @mixin viewport($media, $min: 0, $max: 0) {
   @if $media == max {
-    @media screen and (max-width: $max + px) { @content; }
+    @media (max-width: $max + px) { @content; }
   }
   @else if $media == range {
-    @media screen and (min-width: $min + px) and (max-width: $max + px) { @content; }
+    @media (min-width: $min + px) and (max-width: $max + px) { @content; }
   }
   @else if $media == min {
-    @media screen and (min-width: $min + px) { @content; }
+    @media (min-width: $min + px) { @content; }
   }
 }
 
@@ -84,4 +84,16 @@
   margin-bottom: 10px;
   z-index: 0;
   box-shadow: 0 0px 10px 0 rgba(#000, 0.1);
+  @include atMedium{
+    padding: 1.5rem 0.76rem;
+  }
+  @include atLarge{
+    padding: 2.5rem 1.456rem;
+  }
+}
+@mixin ellipsis($maxWidth: 100%) {
+  max-width:  $maxWidth;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }

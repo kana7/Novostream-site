@@ -4,7 +4,7 @@
   &--bg-white{
     @extend %pannel-white;
     min-width: none;
-    padding: 0;
+    padding: 0 !important;
     cursor: default;
   }
   &__img{
@@ -15,11 +15,15 @@
     font-size: 0.9375rem;
     color: $orange;
     margin-bottom: 5px;
+    @include ellipsis;
   }
   &__list{
     font-size: 0.875rem;
     margin: 15px 0;
-    li:not(:first-child){margin-top: 5px;}
+    li:not(:first-child){
+      margin-top: 5px;
+      @include ellipsis;
+    }
   }
   &__price-tag{
     display: inline-block;
