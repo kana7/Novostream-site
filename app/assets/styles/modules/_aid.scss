@@ -2,6 +2,10 @@
   background-color: white;
   border: 2px solid $orange;
   border-radius: 8px;
+  margin-bottom: 20px;
+  @include atLarge{
+    margin-bottom: 0;
+  }
   &__question{
     color: $orange;
     font-size: 1.125rem;
