@@ -1,6 +1,6 @@
 .service-ad{
   @extend %pannel-white;
-  @include atMedium{
+  @include atLarge{
     margin-bottom: 0;
     &__content{
         height: 153px;

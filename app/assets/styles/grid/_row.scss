@@ -35,26 +35,6 @@
   &--containers-relative{
     &>div{position: relative;}
   }
-  /*Debut règles hauteur égale*/
-  .flexbox &--equal-height-at-medium {
-    @include atMedium {
-      display: flex;
-    }
-    &>div{
-      float: none;
-      display: flex;
-      &.flex-direction-column{flex-direction: column;}
-    }
-  }
-  .flexbox &--equal-height-at-large {
-    @include atLarge {
-      display: flex;
-    }
-    &>div{
-      float: none;
-      display: flex;
-    }
-  }
   @include atSmall {
     &__small-3 {
       float: left;
@@ -122,8 +102,20 @@
     &__medium-pull-right{
       float: right;
     }
+    .flexbox &--equal-height-at-medium {
+      display: flex;
+      &>div{
+        float: none;
+        display: flex;
+        &.flex-direction-column{flex-direction: column;}
+      }
+    }
   }
   @include atLarge {
+    &__large-3 {
+      float: left;
+      width: 25%;
+    }
     &__large-4 {
       float: left;
       width: 33.33%;
@@ -142,8 +134,22 @@
         width: 63%;
       }
     }
+    &__large-9 {
+      float: left;
+      width: 75%;
+    }
     &__b-margin-util-large {
       margin-bottom: 0;
+    }
+    &__large-pull-right{
+      float: right;
+    }
+    .flexbox &--equal-height-at-large {
+      display: flex;
+      &>div{
+        float: none;
+        display: flex;
+      }
     }
   }
 }
