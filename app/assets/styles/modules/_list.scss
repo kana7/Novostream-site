@@ -2,18 +2,18 @@
   list-style: none;
   padding:0;
   margin:0;
-  li:not(:first-child){
+  &>li:not(:first-child){
     margin-top: 18px;
   }
-  li {
+  &>li {
     padding-left: 1rem;
     text-indent: -.7rem;
   }
-  li:not(&__empty):before {
+  &>li:not(&__empty):before {
     content: "• ";
     color: $orange;
   }
-  &__empty:before{
+  &li.list__empty:before{
     content: "\00a0";
     line-height: 1rem;
   }
