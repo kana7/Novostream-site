@@ -13,4 +13,7 @@
     }
     strong{display: block; margin-bottom: 4px;}
   }
+  @include atMedium{
+    iframe{margin: 0;}
+  }
 }
