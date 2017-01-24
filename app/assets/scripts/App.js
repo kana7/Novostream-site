@@ -4,6 +4,7 @@ import StickyHeader from './modules/StickyHeader';
 import ProductServicesDisplay from './modules/ProductServicesDisplay';
 import CatSelection from './modules/CatSelection';
 import SelectOnClick from './modules/SelectOnClick';
+import ChangeImages from './modules/ChangeImages';
 import $ from 'jquery';
 
 $('.aid').each(function(){
@@ -12,6 +13,9 @@ $('.aid').each(function(){
 
 if($('.product-tile')){
   ProductTileHoverEffect();
+}
+if($('.hardware-card__img-box')){
+  new ChangeImages($('.hardware-card__img-box'));
 }
 
 new StickyHeader();
