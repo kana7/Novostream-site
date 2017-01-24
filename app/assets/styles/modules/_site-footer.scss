@@ -4,7 +4,10 @@
   &__top {
     border-bottom: 3px solid $orange;
     padding: 8px 0;
+    text-align: center;
     &__logo{
+      display: block;
+      text-align: center;
       img{
         display: inline;
         height: 58px;
@@ -12,16 +15,41 @@
         vertical-align: -124%;
       }
     }
+    &__nav{
+      float: none;
+      margin-top: 10px;
+    }
+    @include atMedium{
+      text-align: left;
+      &__logo{
+        display: inline-block;
+        text-align: left;
+      }
+      &__nav{float: right; margin-top: 0;}
+    }
   }
   &__bottom {
     padding: 14px 0;
     background-color: $grey-med;
+    text-align: center;
     &__foot-note{
-      @include vertical-align-middle;
+      display: block;
+      margin-bottom: 15px;
     }
     &__logo{
-      float: right;
+      margin: 0 auto;
       img{display: inline;}
+    }
+    @include atMedium{
+      &__foot-note{
+        margin-bottom: 0;
+        @include vertical-align-middle;
+      }
+      &__logo{
+        margin: 0;
+        float: right;
+        img{display: inline;}
+      }
     }
   }
 }

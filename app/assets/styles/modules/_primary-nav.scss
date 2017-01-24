@@ -1,11 +1,13 @@
 .primary-nav {
   display: inline-block;
   float: right;
-  &--vertical-middle{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 0;
+  @include atMedium{
+    &--vertical-middle-until-medium{
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 0;
+    }
   }
   ul {
     margin: 0;
