@@ -17,10 +17,10 @@
     display: inline-block;
     font-size: 1.25rem;
     text-transform: capitalize;;
-    height: 35px;
     overflow: hidden;
     position: relative;
     text-align: center;
+    transition: all .35s ease;
     &:not(:first-child) {
       border-left: 2px dotted $orange;
     }
@@ -28,19 +28,33 @@
       padding-right: 0;
     }
     a {
-      display: block;
+      position: relative;
+      display: inline-block;
+      overflow: hidden;
+      height: 35px;
       line-height: 35px;
       padding: 0 1.125rem;
-      &>span{position: relative; top: 0; transition: all .35s ease;}
-      &>span:not(.icon):after{
-        content: attr(title);
-        display: block;
+      transition: all .35s ease;
+      &.active{
         color: $orange;
+        cursor: default;
       }
-      &.active{color: $orange; cursor: default;}
-      &:not(.active):hover{
-        span:not(.icon){top: -35px;}
-        span.icon{color: $orange;}
+      &:hover{
+        color: $orange;
+        &[data-text]:not(.active){
+          line-height: 145px;
+        }
+      }
+      &[data-text]{
+        &:before{
+          content: attr(data-text);
+          position: absolute;
+          top: -2.75em;
+          text-align: center;
+          width: 100%;
+          left: 0;
+          right: 0;
+        }
       }
     }
   }

@@ -59,6 +59,11 @@
     }
     .site-header__bottom__nav{
       li{font-size: 1.125rem;}
+      a:hover{
+        &[data-text]{
+          line-height: 133px;
+        }
+      }
     }
   }
 }
