@@ -4,6 +4,14 @@
   margin-bottom: 35px;
   background-color: white;
   cursor: default;
+  &:hover{
+    box-shadow: 0 4px 0 0 $blue;
+    .btn{background-color: $blue;}
+  }
+  &--no-hover{
+    filter: grayscale(1);
+    opacity: 0.9;
+  }
   &__header{
     border-bottom: 1px dotted $orange;
     @include clearfix;
@@ -74,13 +82,6 @@
     li:not(:first-child) {
       margin-top: 16px;
     }
-  }
-  &:hover{
-    box-shadow: 0 4px 0 0 $blue;
-  }
-  &--no-hover{
-    filter: grayscale(1);
-    opacity: 0.9;
   }
   @include atSmall{
     &__img, &__content{

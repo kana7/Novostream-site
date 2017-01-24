@@ -15,6 +15,7 @@
   &__link{
     bottom: 0;
     transition: color .3s ease-out;
+    color: $blue;
     &__icon{
       font-size: 1.1em;
       color: $blue;
@@ -28,9 +29,6 @@
     .service-panel__btn{
       background-color: $blue;
       color: white;
-    }
-    .service-ad__link{
-      color: $blue;
     }
   }
   @include viewport(min, $min: 1207){
