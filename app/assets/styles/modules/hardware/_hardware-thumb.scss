@@ -1,6 +1,6 @@
 .hardware-thumb{
   position: relative;
-  min-width: 325px;
+  max-width: 325px;
   &--bg-white{
     @extend %pannel-white;
     min-width: none;

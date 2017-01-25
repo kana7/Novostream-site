@@ -23,6 +23,11 @@
         @include ellipsis;
     }
   }
+  &--no-bullet{
+    &>li:not(&__empty):before{
+      content: none;
+    }
+  }
   @include atSmall{
     font-size: 1rem;
     &--ellipsis-at-small{

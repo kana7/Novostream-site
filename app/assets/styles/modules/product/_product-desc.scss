@@ -1,13 +1,8 @@
 .product-desc{
   background-color: $white-cream;
   padding: 50px 0 45px;
-  &__img{
-    height: 240px;
-    img{display: inline-block; height: 100%;}
-  }
-  &__list{
-    font-weight: 600;
-  }
+
+
   &__txt{
     color: $grey-med;
     text-align: justify;
@@ -20,9 +15,4 @@
     }
   }
   &__list, &__txt{margin-top: 45px;}
-  &__price{
-    text-align: right;
-    margin-bottom: 0;
-    margin-top: 30px;
-  }
 }

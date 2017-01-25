@@ -39,31 +39,43 @@
   &--account:before {
     content: "\61";
   }
-  &--circle-play:before {
+  &--basket:before {
     content: "\62";
   }
-  &--home:before {
+  &--circle:before {
     content: "\63";
   }
-  &--phone:before {
+  &--circle-play:before {
     content: "\64";
   }
-  &--question:before {
+  &--circle-plus:before {
     content: "\65";
   }
-  &--basket:before {
+  &--hd:before {
     content: "\66";
   }
-  &--privatetarife:before {
+  &--home:before {
     content: "\67";
   }
-  &--spezialanwendungen:before {
+  &--musik:before {
     content: "\68";
   }
-  &--unternhementarife:before {
+  &--phone:before {
     content: "\69";
   }
-  &--circle-plus:before {
+  &--privatetarife:before {
     content: "\6a";
+  }
+  &--spezialanwendungen:before {
+    content: "\6b";
+  }
+  &--youtube:before {
+    content: "\6c";
+  }
+  &--question:before {
+    content: "\6d";
+  }
+  &--unternhementarife:before {
+    content: "\6e";
   }
 }

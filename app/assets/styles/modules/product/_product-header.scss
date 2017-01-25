@@ -1,36 +1,94 @@
 .product-header{
-  padding: 12px 0;
-  background-color: $orange;
-  &__title, &__btn{
+  @extend %pannel-white;
+  padding: 0;
+  margin: 0;
+  &__head{
+    border-bottom: 1px dotted $orange;
+    padding: 20px 25px 25px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  &__desc{
     display: inline-block;
+    vertical-align: center;
   }
   &__title{
     margin: 0;
-    color: white;
-    line-height: 40px;
-    float: left;
+    margin-bottom: 5px;
+    display: block;
+    color: $orange;
+    font-size: 1.715625rem;
+  }
+  &__txt{
+    display: block;
+    color: $grey-med;
+    margin: 0;
+  }
+  &__price{
+    display: inline-block;
+    text-align: right;
+    margin-bottom: 0;
+    position: relative;
+    top: 5px;
+  }
+  &__column{
+    padding: 0 40px;
+    text-align: center;
+    &:first-child{padding-left: 0;}
+    &:last-child{padding-right: 0;}
+    &:not(:last-child){
+      border-right: 1px dotted $orange;
+    }
+  }
+  &__img{
+    display: block;
+    max-width: 200px;
+    margin: 0 auto;
   }
   &__btn{
     padding: 0 .75rem;
     border-radius: 5px;
-    float: right;
+    align-self: stretch;
   }
   &__links{
     margin: 0;
     padding: 0;
     list-style: none;
     color: white;
-    @extend .page-title;
-    .flexbox &{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-    }
     &__icon{
       font-size: 1.3em;
       padding-right: 3px;
       vertical-align: -7%;
     }
+  }
+  &__body{
+    padding: 30px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    >.product-header__column{
+      float: none;
+      display: flex;
+      flex-grow: 1;
+      justify-content: center;
+      &--flex-direction-column{flex-direction: column;}
+      &--flex-spread{justify-content: space-between;}
+      &--align-right{text-align: right;}
+    }
+  }
+  &__list{
+    text-align: left;
+    display: inline-block;
+    &--small-margin-t{
+      > li:not(:first-child){
+        margin-top: 10px;
+      }
+    }
+    &--bold{
+      font-weight: 600;
+    }
+    .icon{font-size: 35px; line-height: 1; vertical-align: middle; padding-right: 20px;}
   }
   &--selected-list{
     border-bottom: 5px solid white;
