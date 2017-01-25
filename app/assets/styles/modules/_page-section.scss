@@ -75,3 +75,20 @@
     padding-bottom: 0 !important;
   }
 }
+
+
+.page-content{
+    @extend %pannel-white;
+    cursor: default;
+    border-color: $orange;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    p{
+      font-size: .875rem;
+      line-height: 1.4;
+      strong{display: block;}
+    }
+    &--cl-orange{
+      color: $orange;
+    }
+}
