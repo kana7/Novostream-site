@@ -5,7 +5,6 @@
   padding: 0 .625rem;
   text-decoration: none;
   font-size: .875rem;
-  text-transform: uppercase;
   font-weight: 600;
   text-align: center;
   border-radius: 8px;
@@ -14,8 +13,12 @@
   background-color: white;
   transition: all .35s ease;
   cursor: pointer;
+  &:first-letter{
+    text-transform: uppercase;
+  }
   text:{
     decoration: none;
+    text-transform: lowercase;
   }
   &[data-text]{
     &:before{
@@ -61,7 +64,7 @@
     }
   }
   &--med{
-    font-size: 1rem;
+    font-size: .875rem;
     padding: 0 .7rem;
     height: 2.4rem;
     line-height: 2.4rem;

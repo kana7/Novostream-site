@@ -82,7 +82,13 @@
     cursor: default;
     border-color: $orange;
     padding-top: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
     padding-bottom: 20px;
+    h2{
+      font-size: 1.25rem;
+      margin: 15px 0 20px;
+    }
     p{
       font-size: .875rem;
       line-height: 1.4;
