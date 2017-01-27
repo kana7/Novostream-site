@@ -2,6 +2,9 @@
   position: relative;
   margin-top: 0;
   padding: 0;
+  @include atMedium{
+    margin-top: -34px;
+  }
   li{
     display: inline-block;
     font-size: .875rem;
@@ -23,7 +26,6 @@
     &:hover{color: $orange;}
   }
   &--white{
-    margin-top: -34px;
     li{color: white;}
   }
 }

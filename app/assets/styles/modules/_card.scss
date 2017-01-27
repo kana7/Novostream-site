@@ -1,0 +1,35 @@
+.card{
+  @extend %pannel-white;
+  cursor: default;
+  padding: 0;
+  margin-bottom: 30px;
+  &__content{
+    padding: 1.25rem;
+    min-height: 140px;
+    .flexbox &{
+      display: flex;
+      flex-flow: column;
+      justify-content: space-between;
+    }
+    @include clearfix;
+  }
+  &__title{
+    color: $orange;
+    font-size: 1.25rem;
+    text-transform: lowercase;
+    .flexbox &{
+      flex-grow: 1;
+    }
+    &:first-letter{text-transform: uppercase;}
+  }
+  &__btn{
+    .flexbox &{
+      align-self: flex-end;
+    }
+  }
+  &__img{
+    img{
+      max-width: 100%;
+    }
+  }
+}
