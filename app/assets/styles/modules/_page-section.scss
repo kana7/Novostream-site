@@ -93,11 +93,12 @@
     h4{font-size: 1rem;}
     h5{font-size: .875rem;}
     h3, h4, h5{margin-bottom: 10px;}
-    p{
+    p, ul, ol{
       font-size: .875rem;
       line-height: 1.4;
       strong{display: block;}
     }
+    ol, ul{margin: 0; padding-left: 1.125rem; margin-top: -14px;}
     &--cl-orange{
       color: $orange;
     }
