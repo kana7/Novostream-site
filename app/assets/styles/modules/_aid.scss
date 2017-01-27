@@ -1,4 +1,5 @@
 .aid{
+  position: relative;
   background-color: white;
   border: 2px solid $orange;
   border-radius: 8px;
@@ -40,6 +41,30 @@
   &--is-open{
     .aid__answer{
       border-color: $orange;
+    }
+  }
+  &--faq{
+    margin-bottom: 20px;
+    .aid__question{
+      text-align: left;
+      padding: 8px ;
+    }
+    .aid__answer{
+      &__container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.125rem 0;
+      }
+      &__content{
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+        p{margin: 0; margin-bottom: 10px;}
+      }
+      &__btn{
+        align-self: flex-end;
+      }
     }
   }
 }
