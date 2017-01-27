@@ -2,9 +2,10 @@
   @extend %pannel-white;
   padding: 0;
   margin: 0;
+  cursor: default;
   &__head{
     border-bottom: 1px dotted $orange;
-    padding: 20px 25px 25px 30px;
+    padding:15px 25px 15px 30px;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;

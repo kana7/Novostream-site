@@ -1,23 +1,46 @@
 .product-equipement{
   @extend %pannel-white;
   cursor: default;
+  &--bd-orange{
+    border: 2px solid #f17f24;
+    border-radius: 2px;
+    padding: 1.875rem;
+    margin-bottom: 30px;
+  }
+  &__container{
+    margin-bottom: 20px;
+    text-align: center;
+  }
   &__title{
     color: $orange;
+    font-size: 1.6875rem;
+    line-height: 1;
+    margin: 0 0 10px;
   }
   &__txt{
     strong{display: block; margin-bottom: 3px;}
-    p{margin: 8px 0;}
+    p{margin: 20px 0; text-align: justify;}
+    p:first-child{margin-top: 0;}
     p:last-child{margin-bottom: 0;}
   }
   &__img{
-    height: 100%;
     text-align: center;
     .flexbox &{
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
     }
-    img{display: inline-block;}
+    img{display: inline-block; max-width: 100%;}
+  }
+  @include atMedium{
+    &__container{
+      margin-bottom: 0;
+      text-align: left;
+    }
+    &__img{
+      .flexbox &{
+        align-items: flex-start;
+      }
+    }
   }
 }
