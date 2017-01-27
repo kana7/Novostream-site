@@ -22,4 +22,8 @@
     transition: color .3s ease-out;
     &:hover{color: $orange;}
   }
+  &--white{
+    margin-top: -10px;
+    li{color: white;}
+  }
 }

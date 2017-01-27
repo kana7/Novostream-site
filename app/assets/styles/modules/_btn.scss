@@ -69,31 +69,31 @@
     height: 2.4rem;
     line-height: 2.4rem;
     &[data-text]:hover{
-      line-height: 7.88rem !important;
+      line-height: 7.2rem !important;
+    }
+    }
+    &--large{
+      font-size: 1rem;
+      padding: 0 2.25rem;
+      height: 2.875rem;
+      line-height: 2.875rem;
+      &[data-text]:hover{
+        line-height: 8.45rem !important;
+      }
+    }
+    &--input-size{
+      font-size: 1rem;
+      padding: 0 1.125rem;
+      height: 2.625rem;
+      line-height: 2.625rem;
+      &[data-text]:hover{
+        line-height: 8.2rem !important;
+      }
+    }
+    &[data-text]{
+      &:hover{
+        box-shadow: 0 0 3px rgba(black, .5) inset;
+        line-height: 6.95rem;
+      }
     }
   }
-  &--large{
-    font-size: 1rem;
-    padding: 0 2.25rem;
-    height: 2.875rem;
-    line-height: 2.875rem;
-    &[data-text]:hover{
-      line-height: 8.45rem !important;
-    }
-  }
-  &--input-size{
-    font-size: 1rem;
-    padding: 0 1.125rem;
-    height: 2.625rem;
-    line-height: 2.625rem;
-    &[data-text]:hover{
-      line-height: 8.2rem !important;
-    }
-  }
-  &[data-text]{
-    &:hover{
-      box-shadow: 0 0 3px rgba(black, .5) inset;
-      line-height: 6.95rem;
-    }
-  }
-}
