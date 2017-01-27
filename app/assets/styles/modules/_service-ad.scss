@@ -1,5 +1,7 @@
 .service-ad{
   @extend %pannel-white;
+  border: 1px solid transparent;
+  cursor: pointer;
   &__content{
     position: relative;
   }

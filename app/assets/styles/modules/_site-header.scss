@@ -57,13 +57,5 @@
     .site-header__bottom__logo{
       width: 265px;
     }
-    .site-header__bottom__nav{
-      li{font-size: 1.125rem;}
-      a:hover{
-        &[data-text]:not(.active){
-          line-height: 133px;
-        }
-      }
-    }
   }
 }

@@ -80,7 +80,7 @@
 .page-content{
     @extend %pannel-white;
     cursor: default;
-    border-color: $orange;
+    border:1px solid $orange;
     padding-top: 10px;
     padding-left: 40px;
     padding-right: 40px;

@@ -47,6 +47,9 @@
         margin-right: 15px;
         margin-left: 5px;
         vertical-align: -16%;
+        font-size: 14px;
+        line-height: 30px;
+        padding: 1px;
         content: "";
         color: $grey-med;
         width: 19px;
@@ -60,7 +63,11 @@
     input:checked+label{
       color: $orange;
       &:before{
-        content: "";
+        @include data-icon;
+        vertical-align: 1%;
+        font-size: 15px;
+        line-height: 19px;
+        content: "\63";
         color: $orange;
         border-color: $orange;
       }
