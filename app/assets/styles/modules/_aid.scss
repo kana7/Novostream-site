@@ -16,8 +16,8 @@
     padding: 8px 0;
     &__icon{
       margin-right: 10px;
-      vertical-align: -14%;
-      font-size: 1.8em;
+      vertical-align: -18%;
+      font-size: 1.7em;
     }
   }
   &__answer{
@@ -48,6 +48,15 @@
     .aid__question{
       text-align: left;
       padding: 8px ;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .aid__question__icon{
+      font-size: 1.4em;
+      margin: 0;
+      align-self: flex-end;
     }
     .aid__answer{
       &__container{
