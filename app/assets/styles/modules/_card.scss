@@ -4,8 +4,8 @@
   padding: 0;
   margin-bottom: 30px;
   &__content{
-    padding: 1.25rem;
-    min-height: 140px;
+    padding: 1rem;
+    min-height: 120px;
     .flexbox &{
       display: flex;
       flex-flow: column;
@@ -15,7 +15,8 @@
   }
   &__title{
     color: $orange;
-    font-size: 1.25rem;
+    font-size: 1rem;
+
     text-transform: lowercase;
     .flexbox &{
       flex-grow: 1;

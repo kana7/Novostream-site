@@ -67,6 +67,9 @@
   }
   @include atMedium {
     padding: 3.125rem 0;
+    &--min-height{
+      min-height: 500px;
+    }
     &--small-padding{
       padding: 1.2rem 0;
     }
