@@ -36,7 +36,7 @@
 }
 .icon{
   &:before{
-@include data-icon;
+    @include data-icon;
   }
   &--account:before {
     content: "\61";
@@ -79,5 +79,8 @@
   }
   &--unternhementarife:before {
     content: "\6e";
+  }
+  &--circle-minus:before {
+    content: "\6f";
   }
 }
