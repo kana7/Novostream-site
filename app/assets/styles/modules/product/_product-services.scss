@@ -63,5 +63,8 @@
       opacity: 1;
       transform: translateY(0px);
     }
+    &--no-mheight{
+      max-height: none !important;
+    }
   }
 }
