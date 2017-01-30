@@ -7,8 +7,11 @@ import SelectOnClick from './modules/SelectOnClick';
 import ChangeImages from './modules/ChangeImages';
 import $ from 'jquery';
 
-$('.aid').each(function(){
+$('.aid:not(.aid--faq)').each(function(){
   new BottomSlider($(this));
+});
+$('.aid.aid--faq').each(function(index){
+  new BottomSlider($(this), index);
 });
 
 if($('.product-tile')){

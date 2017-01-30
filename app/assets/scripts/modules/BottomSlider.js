@@ -1,11 +1,14 @@
 import $ from 'jquery';
 
 class BottomSlider {
-  constructor(element) {
+  constructor(element, index) {
     this.element = element;
     this.trigger = this.element.find(".aid__question");
     this.content = this.trigger.next();
     this.bindEvents();
+    if(index<1){
+      this.toggleOpen();
+    }
   }
   bindEvents(){
     const that = this;
