@@ -39,6 +39,13 @@
       background-color: darken($blue, 8%);
     }
   }
+  &--blue-dark{
+    background-color: $blue-dark;
+    color: white;
+    &:hover{
+      background-color: darken($blue-dark, 8%);
+    }
+  }
   &--orange{
     background-color: $orange;
     color: white;

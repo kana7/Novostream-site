@@ -1,4 +1,5 @@
 $blue: #1CB3F4;
+$blue-dark: #2a5782;
 $orange: #f17f24;
 $grey-dark: #3f4952;
 $grey-med: #4D4D4F;
@@ -34,5 +35,5 @@ $gridRowWidth:            $gridColumns*($gridColumnWidth+$gridGutterWidth);
 $fluidGridColumnWidth: percentage(($gridColumnWidth+$gridGutterWidth)/$gridRowWidth);
 
 @function getColumnWidth($columnNumber){
-    @return $columnNumber*$fluidGridColumnWidth;
+  @return $columnNumber*$fluidGridColumnWidth;
 }
