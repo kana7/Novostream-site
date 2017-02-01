@@ -25,7 +25,7 @@ $(function(){
 
   new StickyHeader();
 
-  $('.product-services__item').each(function(){
+  $('.product-services__item:not(.product-services__item--fixed-display)').each(function(){
     new ProductServicesDisplay($(this));
   });
 
