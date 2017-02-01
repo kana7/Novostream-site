@@ -51,12 +51,12 @@
       display: none;
       min-height: 253px;
      &.is-visible{
-       display: table;
+       display: block;
      }
     }
   }
   &__cell{
-    display: table-cell;
+    display: block;
     padding: 0 20px;
     &:not(:first-child){border-left: 1px dotted $orange;}
   }
