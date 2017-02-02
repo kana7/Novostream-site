@@ -5,13 +5,13 @@
   }
   &--bg-white{
     @extend %pannel-white;
-    min-width: none;
+    min-width: auto;
     padding: 0 !important;
-    cursor: default;
   }
   &__img{
     margin: 0 auto;
     max-height: 135px;
+    padding: 20px 0 10px;;
   }
   &__title{
     font-size: 0.9375rem;
