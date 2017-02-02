@@ -2,11 +2,13 @@
   @extend %pannel-white;
   padding: 0;
   margin-bottom: 30px;
+  transition: all .3s ease;
   &__content{
     padding: 1rem;
     min-height: 80px;
     text-align: left;
     border-bottom: 5px solid $orange;
+    transition: border .3s ease;
     .flexbox &{
       display: flex;
       flex-flow: column;
@@ -28,6 +30,7 @@
     font-size: 1rem;
     margin: 0;
     text-transform: lowercase;
+    transition: color .3s ease;
     .flexbox &{
       flex-grow: 1;
     }
@@ -38,6 +41,7 @@
     padding-top: 10px;
     margin-top: 10px;
     border-top :1px solid $orange;
+    transition: border .3s ease;
     font-size: 0.875rem;
     color: $grey-med;
   }
@@ -47,8 +51,20 @@
     }
   }
   &__img{
+    overflow: hidden;
     img{
       max-width: 100%;
+      transform: scale(1);
+      transform-origin: 50% 50%;
+      transition: transform .5s ease;
     }
+  }
+  &:hover{
+    box-shadow: 0 0 10px 0 rgba($blue, .8);
+    .card__content{
+      border-color: $blue;
+    }
+    .card__title{color: $blue;}
+    .card__txt{border-color: $blue;}
   }
 }
