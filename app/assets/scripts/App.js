@@ -7,6 +7,7 @@ import SelectOnClick from './modules/SelectOnClick';
 import ChangeImages from './modules/ChangeImages';
 import Slider from './modules/Slider.js';
 import Modal from './modules/Modal';
+import LoginDisplay from './modules/LoginDisplay';
 import $ from 'jquery';
 
 $(function(){
@@ -24,6 +25,7 @@ $(function(){
     new ChangeImages($('.hardware-card__img-box'));
   }
 
+  var login = new LoginDisplay($('.site-header__top__links__login'));
   var stickyHeader = new StickyHeader();
 
   $('.product-services__item:not(.product-services__item--fixed-display)').each(function(){

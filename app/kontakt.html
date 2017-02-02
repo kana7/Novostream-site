@@ -20,9 +20,33 @@
       <div class="site-header__top">
         <div class="wrapper">
           <div class="row">
-            <span class="foot-note"><span class="icon icon--phone foot-note__icon"></span> Hotline : 0651 999 89 0 89</span>
             <ul class="site-header__top__links">
-              <li><a href="./kontakt.html" class="foot-note foot-note--active">Kontakt</a></li>
+              <li><a href="#" class="foot-note active">Privatkunden</span></a></li>
+              <li><a href="#" class="foot-note">Geschäftskunden</span></a></li>
+            </ul>
+            <ul class="site-header__top__links site-header__top__links--pull-right">
+              <li><span class="foot-note"><span class="icon icon--phone foot-note__icon"></span> Hotline : 0651 999 89 0 89</a></li>
+              <li class="margin-left"><a href="./kontakt.html" class="foot-note">Kontakt</a></li>
+              <li class="margin-left site-header__top__links__login">
+                <a href="#" class="foot-note"><span class="icon icon--account foot-note__icon"></span>Kundenkonto</a>
+                <div class="login-form site-header__top__links__login-form">
+                  <form action="index.html" method="post">
+                    <h3 class="login-form__title">Kundenlogin</h3>
+                    <div class="login-form__input-group">
+                      <span class="icon icon--account"></span><input type="text" name="username" placeholder="Nutzername">
+                    </div>
+                    <div class="login-form__input-group">
+                      <span class="icon icon--spezialanwendungen"></span><input type="password" name="password" placeholder="Kennwort">
+                    </div>
+                    <input type="submit" class="btn btn--blue btn--med login-form__submit" value="Verbinden"></button>
+                    <ul class="login-form__links">
+                      <li><a href="#">Kennwort vergessen</a></li>
+                      <li class="separator">|</li>
+                      <li><a href="#">Jetzt registrieren</a></li>
+                    </ul>
+                  </form>
+                </div>
+              </li>
             </ul>
           </div>
         </div>

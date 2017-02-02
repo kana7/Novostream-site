@@ -38,12 +38,23 @@
       &__login{
         position: relative;
         z-index: 1;
+        &--is-open{
+          .site-header__top__links__login-form{
+            visibility: visible;
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
       }
       &__login-form{
         position: absolute;
         display: block;
+        visibility: hidden;
+        opacity: 0;
         z-index: 10;
         right: 0;
+        transition: all .3s ease;
+        transform: translateY(-10px);
       }
     }
   }
@@ -82,6 +93,7 @@
     .site-header__bottom{
       padding: 10px 0;
     }
+    .site-header__top__links__login-form{visibility: hidden; opacity: 0; transform: translateY(-10px);}
     .site-header__bottom__logo{
       width: 265px;
     }
