@@ -10,7 +10,6 @@
   &__top {
     background-color: $grey-dark;
     height: 29px;
-    overflow: hidden;
     transition: height .3s ease;
 
     &__links {
@@ -34,7 +33,17 @@
             background-color: darken($grey-dark, 10%);
           }
         }
-        &.margin-left{margin-left: 2.375rem;}
+        &.margin-left{margin-left: 1.875rem;}
+      }
+      &__login{
+        position: relative;
+        z-index: 1;
+      }
+      &__login-form{
+        position: absolute;
+        display: block;
+        z-index: 10;
+        right: 0;
       }
     }
   }
@@ -58,9 +67,13 @@
       }
     }
     &__logo{
-      display: inline-block;
-      width: 367px;
       transition: width .3s ease;
+    }
+    .flexbox &__flexbox{
+      display: flex;
+      flex-flow: row;
+      align-items: center;;
+      justify-content: space-between;
     }
   }
   &--minimize{

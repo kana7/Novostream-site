@@ -1,6 +1,4 @@
 .primary-nav {
-  display: inline-block;
-  float: right;
   @include atMedium{
     &--vertical-middle-until-medium{
       position: absolute;
