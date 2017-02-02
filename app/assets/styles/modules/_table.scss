@@ -73,4 +73,9 @@
       }
     }
   }
+  &__note{
+    span{color: $orange;}
+    font-size: 0.8125rem;
+    color: $grey-light;
+  }
 }
