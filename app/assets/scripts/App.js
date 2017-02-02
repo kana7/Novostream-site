@@ -6,6 +6,7 @@ import CatSelection from './modules/CatSelection';
 import SelectOnClick from './modules/SelectOnClick';
 import ChangeImages from './modules/ChangeImages';
 import Slider from './modules/Slider.js';
+import Modal from './modules/Modal';
 import $ from 'jquery';
 
 $(function(){
@@ -23,7 +24,7 @@ $(function(){
     new ChangeImages($('.hardware-card__img-box'));
   }
 
-  new StickyHeader();
+  var stickyHeader = new StickyHeader();
 
   $('.product-services__item:not(.product-services__item--fixed-display)').each(function(){
     new ProductServicesDisplay($(this));
@@ -39,4 +40,5 @@ $(function(){
   if($('.siema').length>0){
     new Slider('.siema');
   }
+  var modal = new Modal();
 });

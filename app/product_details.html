@@ -20,9 +20,13 @@
       <div class="site-header__top">
         <div class="wrapper">
           <div class="row">
-            <span class="foot-note"><span class="icon icon--phone foot-note__icon"></span> Hotline : 0651 999 89 0 89</span>
             <ul class="site-header__top__links">
-              <li><a href="#" class="foot-note">Kontakt</a></li>
+              <li><a href="#" class="foot-note active">Privatkunden</span></a></li>
+              <li><a href="#" class="foot-note">Geschäftskunden</span></a></li>
+            </ul>
+            <ul class="site-header__top__links site-header__top__links--pull-right">
+              <li><span class="foot-note"><span class="icon icon--phone foot-note__icon"></span> Hotline : 0651 999 89 0 89</a></li>
+              <li class="margin-left"><a href="./kontakt.html" class="foot-note">Kontakt</a></li>
             </ul>
           </div>
         </div>
@@ -84,7 +88,7 @@
               <li><span class="icon icon--youtube"></span>40 Stunden YouTube-Videos</li>
               <li><span class="icon icon--hd"></span>13 Stunden HD Videos</li>
             </ul>
-            <a href="#" data-text="In den Warenkorb" class="btn btn--orange btn--large product-header__btn">In den Warenkorb</a>
+            <a href="#" data-text="In den Warenkorb" class="btn btn--orange btn--large product-header__btn open-modal">In den Warenkorb</a>
           </div>
         </div>
       </div>
@@ -443,8 +447,29 @@ Satellitenfinder, doppeladriges Koaxialkabel 20 Meter
     </div>
   </footer>
 </div>
-<!-- build:js assets/scripts/App.js -->
-<script src="/temp/scripts/App.js" charset="utf-8"></script>
-<!-- endbuild -->
+<div class="modal">
+  <div class="modal__inner">
+    <div class="wrapper">
+      <div class="row row--equal-height-at-large">
+        <div class="row__medium-6">
+          <div class="modal__img">
+            <img src="assets/images/satset2.png" alt="">
+          </div>
+        </div>
+        <div class="row__medium-6">
+          <div class="modal__description">
+            <h2 class="page-title">Astra Connect Sat Endkundenset</h2>
+            <p>Zum Internet via Sat Anschluss gehört immer eine Internet-taugliche Sat Anlage, welche wir Ihnen sofort nach Annahme Ihrer Bestellung mit der Post zusenden.</p>
+            <p>Die Satellitenantenne wird außerhalb Ihres Hauses in Richtung Süden installiert. Handwerklich begabte Anwender können das selber erledigen oder überlassen Sie es vertrauensvoll einem qualifizierten Fachunternehmen. Bei der Suche sind wir Ihnen gerne behilflich. Nach der Montage schließen Sie das von uns mitgelieferte Satellitenmodem einfach an Ihren Rechner oder Router an und schon kann es losgehen.</p>
+            <p>Sie benötigen keinen zusätzlichen Telefonanschluss. Nach dieser einfachen Inbetriebnahme können Sie den Dienst sofort nutzen.</p>                </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal__close">SCHLIEßEN <span>X</span></div>
+  </div>
+  <!-- build:js assets/scripts/App.js -->
+  <script src="/temp/scripts/App.js" charset="utf-8"></script>
+  <!-- endbuild -->
 </body>
 </html>

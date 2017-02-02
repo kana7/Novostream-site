@@ -8,18 +8,33 @@
   box-shadow: 0 0 10px 0px rgba(#000, 0.25);
   transition: background .3s ease, top .3s ease;
   &__top {
-    padding: 5px 0;
     background-color: $grey-dark;
     height: 29px;
     overflow: hidden;
     transition: height .3s ease;
 
     &__links {
-      float: right;
+      display: inline-block;
       margin: 0;
+      padding: 0;
+      padding-right: 2.5rem;
+      float: left;
+      line-height: 29px;
+      &--pull-right{
+        float: right;
+        padding-right: 0;
+        padding-left: 2.5rem;
+      }
       li {
         display: inline-block;
-        &:not(:first-child){margin-left: 2.375rem;}
+        a{
+          display: block;
+          padding: 0 0.625rem;
+          &.active{
+            background-color: darken($grey-dark, 10%);
+          }
+        }
+        &.margin-left{margin-left: 2.375rem;}
       }
     }
   }
