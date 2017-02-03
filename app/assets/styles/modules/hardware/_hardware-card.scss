@@ -31,9 +31,14 @@
   }
   &__image{
     max-width: 330px;
+    text-align: center;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
+    img{
+      display: inline-block;
+      max-height: 160px;
+    }
   }
   &__image-thumbs{
     display: inline-block;
