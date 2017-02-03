@@ -1,7 +1,7 @@
 .page-section {
   padding: 1.2rem 0;
   &--cream {
-      background: $white-cream url('../../assets/images/Motif_bruit.jpg') repeat;
+    background: $white-cream url('../../assets/images/Motif_bruit.jpg') repeat;
   }
   &--no-b-padding{
     padding-bottom: 0 !important;
@@ -25,14 +25,16 @@
       }
     }
   }
-  &--p-aid{
-    @include atMedium {
+  @include atMedium {
+    &--p-aid{
       padding: 76px 0 !important;
+    }
+    &--bg-parabole, &--bg-sky{
+      padding: 2.5rem 0;
     }
   }
   &--bg-parabole {
     min-height: 210px;
-    padding: 2.5rem 0;
     &.lazyloaded{
       background: #1c3647 url("../../assets/images/BG_parabole.jpg") no-repeat;
       background-size: cover;
@@ -42,7 +44,6 @@
   }
   &--bg-sky {
     min-height: 210px;
-    padding: 2.5rem 0;
     &.lazyloaded{
       background: #1c3647 url("../../assets/images/BG_terre.jpg") no-repeat;
       background-size: cover;
@@ -81,31 +82,31 @@
 
 
 .page-content{
-    @extend %pannel-white;
-    cursor: default;
-    border:1px solid $orange;
-    padding-top: 10px;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-bottom: 20px;
-    h2{
-      font-size: 1.25rem;
-      margin: 15px 0 20px;
-    }
-    h3{font-size: 1.125rem;}
-    h4{font-size: 1rem;}
-    h5{font-size: .875rem;}
-    h3, h4, h5{margin-bottom: 10px;}
-    p, ul, ol{
-      font-size: .875rem;
-      line-height: 1.4;
-      strong{display: block;}
-    }
-    ol, ul{margin: 0; padding-left: 1.125rem; margin-top: -14px;}
-    &--cl-orange{
-      color: $orange;
-    }
-    &--cl-bold{
-      font-weight: 600;
-    }
+  @extend %pannel-white;
+  cursor: default;
+  border:1px solid $orange;
+  padding-top: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 20px;
+  h2{
+    font-size: 1.25rem;
+    margin: 15px 0 20px;
+  }
+  h3{font-size: 1.125rem;}
+  h4{font-size: 1rem;}
+  h5{font-size: .875rem;}
+  h3, h4, h5{margin-bottom: 10px;}
+  p, ul, ol{
+    font-size: .875rem;
+    line-height: 1.4;
+    strong{display: block;}
+  }
+  ol, ul{margin: 0; padding-left: 1.125rem; margin-top: -14px;}
+  &--cl-orange{
+    color: $orange;
+  }
+  &--cl-bold{
+    font-weight: 600;
+  }
 }

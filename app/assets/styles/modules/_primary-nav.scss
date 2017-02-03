@@ -1,5 +1,7 @@
 .primary-nav {
+  display: none;
   @include atMedium{
+    display: block;
     &--vertical-middle-until-medium{
       position: absolute;
       top: 50%;

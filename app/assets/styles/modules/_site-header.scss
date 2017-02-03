@@ -11,18 +11,26 @@
     background-color: $grey-dark;
     height: 29px;
     transition: height .3s ease;
-
+    .site-header__top__links:nth-child(2){
+      li:not(.site-header__top__links__login){
+        display: none;
+      }
+    }
+    @include atMedium{
+      .site-header__top__links:nth-child(2){
+        li:not(.site-header__top__links__login){
+          display: inline-block;
+        }
+      }
+    }
     &__links {
       display: inline-block;
       margin: 0;
       padding: 0;
-      padding-right: 2.5rem;
       float: left;
       line-height: 29px;
       &--pull-right{
         float: right;
-        padding-right: 0;
-        padding-left: 2.5rem;
       }
       li {
         display: inline-block;
@@ -33,7 +41,9 @@
             background-color: darken($grey-dark, 10%);
           }
         }
-        &.margin-left{margin-left: 1.875rem;}
+        @include atMedium{
+          &.margin-left{margin-left: 1.875rem;}
+        }
       }
       &__login{
         position: relative;
@@ -59,28 +69,35 @@
     }
   }
   &__bottom {
-    padding: 28px 0;
+    padding: 10px 0;
     transition: all .3s ease;
-    &.lazyloaded{
-      &:before{
-        content: "";
-        opacity: 0.3;
-        background: white url('../../assets/images/Circle2.png') no-repeat;
-        background-position: -35% 11%;
-        background-clip: border-box;
-        background-origin: content-box;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        position: absolute;
-        z-index: -1;
+    @include atMedium{
+      padding: 28px 0;
+      &.lazyloaded{
+        &:before{
+          content: "";
+          opacity: 0.3;
+          background: white url('../../assets/images/Circle2.png') no-repeat;
+          background-position: -35% 11%;
+          background-clip: border-box;
+          background-origin: content-box;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          position: absolute;
+          z-index: -1;
+        }
       }
     }
     &__logo{
       transition: transform .3s ease;
       transform-origin: 0 0;
       transform: scale(1);
+      max-width: 250px;
+      @include atLarge{
+        max-width: none;
+      }
     }
     .flexbox &__flexbox{
       display: flex;

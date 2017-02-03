@@ -7,8 +7,14 @@
     border-bottom: 1px dotted $orange;
     padding:15px 25px 15px 30px;
     display: flex;
+    flex-flow: column;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: flex-start;
+    text-align: center;
+    @include atMedium{
+      flex-flow: row;
+      text-align: left;
+    }
   }
   &__desc{
     display: inline-block;
@@ -32,14 +38,21 @@
     margin-bottom: 0;
     position: relative;
     top: 5px;
+    min-width: 180px;
+    align-self: center;
+    @include atMedium{
+      align-self: flex-end;
+    }
   }
   &__column{
-    padding: 0 40px;
-    text-align: center;
+
     &:first-child{padding-left: 0;}
     &:last-child{padding-right: 0;}
-    &:not(:last-child){
-      border-right: 1px dotted $orange;
+    @include atMedium{
+      padding: 0 40px;
+      &:not(:last-child){
+        border-right: 1px dotted $orange;
+      }
     }
   }
   &__img{
@@ -51,6 +64,7 @@
     padding: 0 .75rem;
     border-radius: 5px;
     align-self: stretch;
+    margin-top: 10px;
   }
   &__links{
     margin: 0;
@@ -64,18 +78,43 @@
     }
   }
   &__body{
-    padding: 30px 40px;
+    padding: 0 20px;
     display: flex;
     justify-content: space-between;
     align-items: stretch;
+    flex-flow: column;
     >.product-header__column{
       float: none;
       display: flex;
       flex-grow: 1;
-      justify-content: center;
+      justify-content: flex-start;
+      padding: 15px 0 15px;
+      &:not(:last-child){
+        border-bottom: 1px dotted $orange;
+      }
       &--flex-direction-column{flex-direction: column;}
       &--flex-spread{justify-content: space-between;}
       &--align-right{text-align: right;}
+      &--display-flex-until-large{display: none;}
+      @include atMedium{
+        justify-content: space-between;
+        &:not(:last-child){
+          border-bottom: none;
+        }
+        &:first-child{padding-left: 0;}
+        &:last-child{padding-right: 0;}
+        padding: 0 40px;
+      }
+      @include atLarge{
+        &--display-flex-until-large{
+          display: flex;
+        }
+      }
+    }
+    @include atMedium{
+      flex-flow: row;
+      justify-content: center;
+      padding: 30px 40px;
     }
   }
   &__list{
@@ -89,7 +128,7 @@
     &--bold{
       font-weight: 600;
     }
-    .icon{font-size: 35px; line-height: 1; vertical-align: middle; padding-right: 20px;}
+    .icon{font-size: 2.1875em; line-height: 1; vertical-align: middle; padding-right: 20px;}
   }
   &--selected-list{
     border-bottom: 5px solid white;
