@@ -4,18 +4,22 @@
     background-color: white;
     border: 2px solid $orange;
     border-radius: 2px;
-    padding: 2.8125rem 2.8125rem 1.5625rem;
     counter-increment: product-services-counter;
     text-align: right;
     transition: all .3s ease;
     margin-bottom: 30px;
+    padding: 1rem;
+    @include atMedium{
+      padding: 2.8125rem 2.8125rem 1.5625rem;
+    }
   }
   &__content{
     position: relative;
-    padding-left: 3.2rem;
     text-align: left;
     color: $grey-light;
-    &:before{
+    @include atMedium{
+      padding-left: 3.2rem;
+      &:before{
       content: counter(product-services-counter);
       position: absolute;
       top: -8px;
@@ -29,6 +33,7 @@
       height: 40px;
       text-align: center;
       line-height: 40px;
+    }
     }
   }
   &__title{

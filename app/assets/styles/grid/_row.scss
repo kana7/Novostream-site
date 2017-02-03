@@ -169,3 +169,22 @@
 .clearfix{
   @include clearfix;
 }
+
+.flexbox{
+  .flex-row{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-between;
+    &>*:not(:last-child){margin-bottom: 20px;}
+    @include atMedium{
+      flex-flow: row;
+      &>*:not(:last-child){margin-bottom: 0;}
+    }
+  }
+  .flex-item{
+    &--end{
+      align-self: flex-end;
+    }
+  }
+}

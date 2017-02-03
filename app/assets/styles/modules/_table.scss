@@ -12,9 +12,13 @@
     div{display: inline-block; text-align: left;}
   }
   td{
-    font-size: 1.25rem;
-    padding: 10px 0;
-    .price{font-size: 1.625rem;}
+    font-size: 1rem;
+    .price{font-size: 1.4rem;}
+    @include atMedium{
+      padding: 10px 0;
+      font-size: 1.25rem;
+      .price{font-size: 1.625rem;}
+    }
   }
   tr{
     td, th{
@@ -24,6 +28,7 @@
     th{
       padding-bottom: 15px;
     }
+    td:last-child{padding-right: 10px; text-align: right;}
   }
   th:not(:first-child), td:not(:first-child){
     text-align: center;
