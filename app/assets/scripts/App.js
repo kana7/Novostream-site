@@ -8,6 +8,7 @@ import ChangeImages from './modules/ChangeImages';
 import Slider from './modules/Slider.js';
 import Modal from './modules/Modal';
 import LoginDisplay from './modules/LoginDisplay';
+import MobileMenu from './modules/MobileMenu';
 import $ from 'jquery';
 
 $(function(){
@@ -43,4 +44,5 @@ $(function(){
     new Slider('.siema');
   }
   var modal = new Modal();
+  var mobileMenu = new MobileMenu();
 });

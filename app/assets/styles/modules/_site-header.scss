@@ -1,12 +1,12 @@
 .site-header {
   position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
   width: 100%;
   background-color: white;
   z-index: 2;
   box-shadow: 0 0 10px 0px rgba(#000, 0.25);
-  transition: background .3s ease, top .3s ease;
+  transition: background .3s ease, top .3s ease, right .3s ease;
   &__top {
     background-color: $grey-dark;
     height: 29px;

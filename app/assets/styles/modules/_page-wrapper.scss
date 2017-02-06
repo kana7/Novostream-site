@@ -3,10 +3,18 @@
   width: 100%;
   padding-top: 100px;
   overflow-x: hidden;
+  right: 0;
+  transition: right .3s ease;
   @include atMedium{
     padding-top: 135px;
   }
   @include atLarge{
     padding-top: 160px;
+  }
+  &--open-mobile-menu{
+    right: 100px;
+    .site-header{
+      right: 100px;
+    }
   }
 }
