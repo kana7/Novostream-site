@@ -4,6 +4,7 @@
   padding-top: 100px;
   overflow-x: hidden;
   right: 0;
+  box-shadow: 2px 0 10px 0 rgba(0,0,0,0.3);
   transition: right .3s ease;
   @include atMedium{
     padding-top: 135px;
@@ -12,9 +13,9 @@
     padding-top: 160px;
   }
   &--open-mobile-menu{
-    right: 100px;
+    right: 247px;
     .site-header{
-      right: 100px;
+      right: 247px;
     }
   }
 }

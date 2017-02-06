@@ -33,7 +33,7 @@ $(function(){
     new ProductServicesDisplay($(this));
   });
 
-  //new SelectOnClick($('.hardware-selection__nav'), 'li:not(.hardware-selection__nav__arrow)');
+  //new SelectOnClick($('.hardware-selection__nav'), µ'li:not(.hardware-selection__nav__arrow)');
   new CatSelection({
     nav : $('.hardware-selection__nav'),
     navChildSelector : 'li:not(.hardware-selection__nav__arrow)',
