@@ -4,9 +4,9 @@ class MobileMenu {
   constructor() {
     this.siteHeader = $('.page-wrapper');
     this.menuIcon = $('.site-header__menu-icon');
-    this.mobileSideBar = $('.mobile-side-menu');
-    this.mobileMenu = this.mobileSideBar.find('ul.menu');
-    this.menuItems = this.mobileMenu.find('li.menu-item');
+    this.mobileSideBar = $('.mobile-nav');
+    this.mobileMenu = this.mobileSideBar.find('ul.mobile-nav__list');
+    this.menuItems = this.mobileMenu.find('li.mobile-nav__list__item');
     this.menuLinks = this.mobileSideBar.find('ul.menu-links');
     this.backButtons = this.menuLinks.find('.back');
     this.currentSubMenu;

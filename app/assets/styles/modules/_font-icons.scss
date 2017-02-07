@@ -83,4 +83,10 @@
   &--circle-minus:before {
     content: "\6f";
   }
+  &--left-arrow:before {
+    content: "\70";
+  }
+  &--right-arrow:before {
+    content: "\71";
+  }
 }
