@@ -9,6 +9,7 @@ import Slider from './modules/Slider.js';
 import Modal from './modules/Modal';
 import LoginDisplay from './modules/LoginDisplay';
 import MobileMenu from './modules/MobileMenu';
+import AvailabityCheck from './modules/AvailabilityCheck';
 import $ from 'jquery';
 
 $(function(){
@@ -40,9 +41,12 @@ $(function(){
     content : $('.hardware-selection__content')
   });
 
-  if($('.siema').length>0){
+  if($('.siema').length > 0){
     new Slider('.siema');
   }
   var modal = new Modal();
   var mobileMenu = new MobileMenu();
+  if($('#btnCP').length > 0){
+    var availability = new AvailabityCheck();
+  }
 });

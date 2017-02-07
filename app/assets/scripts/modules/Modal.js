@@ -10,7 +10,7 @@ class Modal {
     events() {
       this.openModalButton.click(this.openModal.bind(this));
       this.closeModalButton.click(this.closeModal.bind(this));
-      this.modal.on('mouseleave', this.closeModal.bind(this));
+      //this.modal.on('mouseleave', this.closeModal.bind(this));
       $(document).keyup(this.keyPressHandler.bind(this));
     }
     openModal() {
