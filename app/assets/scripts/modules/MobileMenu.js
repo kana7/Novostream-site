@@ -9,7 +9,7 @@ class MobileMenu {
     this.menuItems = this.mobileMenu.find('li.mobile-nav__list__item');
     this.menuLinks = this.mobileSideBar.find('ul.menu-links');
     this.backButtons = this.menuLinks.find('.back');
-    this.currentSubMenu;
+    this.currentSubMenu = null;
     this.events();
   }
   events() {
@@ -20,9 +20,9 @@ class MobileMenu {
   toggleTheMenu() {
     this.siteHeader.toggleClass("page-wrapper--open-mobile-menu");
     this.menuIcon.toggleClass("site-header__menu-icon--close-x");
+    this.hideSubMenu.call(this);
   }
   showSubMenu(event){
-    console.log(event);
     var element = $(event.target);
     if (element.attr('data-id')) {
       this.currentSubMenu = this.getSubMenu(element.attr('data-id'));
@@ -30,7 +30,7 @@ class MobileMenu {
     }
   }
   hideSubMenu(){
-    if (typeof this.currentSubMenu !== null) {
+    if (this.currentSubMenu) {
       this.currentSubMenu.closest('.menu-links-wrapper').removeClass('is-open');
       this.currentSubMenu = null;
     }
