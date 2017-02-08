@@ -62,7 +62,7 @@
             </ul>
             <ul class="site-header__top__links site-header__top__links--pull-right">
               <li><span class="foot-note"><span class="icon icon--phone foot-note__icon"></span> Hotline : 0651 999 89 0 89</a></li>
-              <li class="margin-left"><a href="./kontakt.html" class="foot-note">Kontakt</a></li>
+              <li class="margin-left"><a href="../../kontakt.html" class="foot-note">Kontakt</a></li>
               <li class="margin-left site-header__top__links__login">
                 <a href="#" class="foot-note"><span class="icon icon--account foot-note__icon"></span>Kundenkonto</a>
                 <div class="login-form site-header__top__links__login-form">
@@ -210,13 +210,15 @@
             </div>
 
             <div class="row__medium-6 row__large-3">
-              <div class="service-ad">
-                <div class="service-ad__content">
-                  <h2 class="service-ad__title">Verfügbarkeit</h2>
-                  <p class="service-ad__txt">Sie können praktisch überall Internet via SAT nutzen, sofern Sie die Schüssel in Richtung Süden und 30 Grad über dem Horizont anbringen können.</p>
-                  <span class="service-ad__link">Prüfen Sie hier</span>
+              <a href="#" class="open-modal">
+                <div class="service-ad">
+                  <div class="service-ad__content">
+                    <h2 class="service-ad__title">Verfügbarkeit</h2>
+                    <p class="service-ad__txt">Sie können praktisch überall Internet via SAT nutzen, sofern Sie die Schüssel in Richtung Süden und 30 Grad über dem Horizont anbringen können.</p>
+                    <span class="service-ad__link">Prüfen Sie hier</span>
+                  </div>
                 </div>
-              </div>
+              </a>
             </div>
 
             <div class="row__medium-6 row__large-3">
@@ -278,6 +280,35 @@
         </div>
       </div>
     </footer>
+  </div>
+  <div class="modal modal--availability-check">
+    <div class="modal__panel">
+      <div class="modal__inner">
+        <div class="modal__description">
+          <h2 class="page-title">Novostream an Ihrer Adresse</h2>
+          <div class="availability">
+            <p>Bitte überprüfen Sie die Verfügbarkeit an Ihrer Adresse:</p>
+            <div class="input-group availability__pc">
+              <input id="inpCP" class="inpCP input-group__input" type="text" value="" maxlength="5"><br>
+              <input id="btnCP" class="btn btn--orange btn--med" type="button" value="Überprüfen">
+            </div>
+            <div class="availability__result">
+              <div class="loc input-group">
+                <select id="loc" class="input-group__input"></select>
+              </div>
+              <div class="street input-group">
+                <select id="street" class="input-group__input"></select>
+              </div>
+              <div class="availability__result__service service serv0">
+                <p>Die Novostream Produkte sind an Ihrer Adresse verfügbar.</p>
+                <a href="../../internettarife/startseite.html" class="btn btn--blue btn--large">Zu den Tarifen</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal__close"><span>X</span></div>
+    </div>
   </div>
   <!-- build:js ../../assets/scripts/App.js -->
   <script src="../../temp/scripts/App.js" charset="utf-8"></script>
