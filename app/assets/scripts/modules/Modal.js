@@ -1,30 +1,42 @@
 import $ from 'jquery';
 
 class Modal {
-    constructor() {
-        this.openModalButton = $(".open-modal");
-        this.modal = $(".modal");
-        this.closeModalButton = $(".modal__close");
-        this.events();
+  constructor() {
+    this.currentModalId;
+    this.openModalButton = $(".open-modal");
+    this.modal = $(".modal");
+    this.closeModalButton = $(".modal__close");
+    this.events();
+  }
+  events() {
+    this.openModalButton.click(this.openModal.bind(this));
+    this.closeModalButton.click(this.closeModal.bind(this));
+    //this.modal.on('mouseleave', this.closeModal.bind(this));
+    $(document).keyup(this.keyPressHandler.bind(this));
+  }
+  openModal(event) {
+    event.preventDefault();
+    this.currentModalId = $(event.target).closest('a').attr('data-modal-id') || null;
+    if(this.currentModalId){
+      this.modal.filter('#'+this.currentModalId).addClass("modal--is-visible");
+    }else{
+      this.modal.filter(':first').addClass("modal--is-visible");
     }
-    events() {
-      this.openModalButton.click(this.openModal.bind(this));
-      this.closeModalButton.click(this.closeModal.bind(this));
-      //this.modal.on('mouseleave', this.closeModal.bind(this));
-      $(document).keyup(this.keyPressHandler.bind(this));
+    return false;
+  }
+  closeModal() {
+    if(this.currentModalId){
+      this.modal.filter('#'+this.currentModalId).removeClass("modal--is-visible");
+    }else{
+      this.modal.filter(':first').removeClass("modal--is-visible");
     }
-    openModal() {
-      this.modal.addClass("modal--is-visible");
-      return false;
+    this.currentModalId = null;
+  }
+  keyPressHandler(e){
+    if (e.keyCode == "27") {
+      this.closeModal();
     }
-    closeModal() {
-      this.modal.removeClass("modal--is-visible");
-    }
-    keyPressHandler(e){
-      if (e.keyCode == "27") {
-        this.closeModal();
-      }
-    }
+  }
 }
 
 export default Modal;
