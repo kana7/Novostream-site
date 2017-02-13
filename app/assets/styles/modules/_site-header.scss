@@ -28,7 +28,6 @@
       margin: 0;
       padding: 0;
       float: left;
-      line-height: 29px;
       &--pull-right{
         float: right;
       }
@@ -37,6 +36,8 @@
         a{
           display: block;
           padding: 0 0.625rem;
+          line-height: 29px;
+          height: 29px;
           &.active{
             background-color: darken($grey-dark, 10%);
           }

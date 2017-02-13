@@ -113,9 +113,6 @@
   <picture>
     <img class="banner-home__img lazyload" data-src="./assets/images/Slide.jpg" alt="">
   </picture>
-  <div class="banner-home__top-image">
-    <img src="./assets/images/Slide_over.png" alt="">
-  </div>
   <div class="banner-home__content">
     <div class="wrapper">
       <div class="row">
@@ -134,19 +131,20 @@
     <div class="wrapper">
       <div class="row">
 
-        <div class="row--gutters">
+        <div class="row--gutters row--gutters-small">
           <div class="row__small-6">
             <a href="../../internettarife/startseite.html">
               <div class="service-panel">
                 <picture>
-                  <img class="lazyload" data-srcset="./assets/images/ThinkstockPhotos-530187963.jpg" alt="">
+                  <source data-srcset="./assets/images/ThinkstockPhotos-530187963.jpg" media="(min-width: 800px)">
+                  <img class="lazyload" data-srcset="./assets/images/small/ThinkstockPhotos-530187963.jpg">
                 </picture>
                 <div class="service-panel__content">
                   <h2 class="service-panel__title">connect sat</h2>
                   <p class="service-panel__txt">Breitband Internet bei
                     dir zuhause über Satellit</p>
                   </div>
-                  <div data-text="Mehr informationen" class="btn btn--orange service-panel__btn">mehr informationen</div>
+                  <div data-text="Mehr informationen" class="btn btn--orange service-panel__btn">Mehr informationen</div>
                 </div>
               </a>
             </div>
@@ -155,12 +153,13 @@
               <a href="#">
                 <div class="service-panel">
                   <picture>
-                    <img class="lazyload" data-srcset="./assets/images/ThinkstockPhotos-6123692581.jpg" alt="">
+                    <source data-srcset="./assets/images/ThinkstockPhotos-6123692581.jpg" media="(min-width: 800px)">
+                    <img class="lazyload" data-srcset="./assets/images/small/ThinkstockPhotos-6123692581.jpg">
                   </picture>
                   <div class="service-panel__content">
                     <h2 class="service-panel__title">Wie funktioniert Internet via Satellit?</h2>
                   </div>
-                  <div data-text="Mehr informationen" class="btn btn--orange service-panel__btn">mehr informationen</div>
+                  <div data-text="Mehr informationen" class="btn btn--orange service-panel__btn">Mehr informationen</div>
                 </div>
               </a>
             </div>
@@ -203,11 +202,11 @@
 
           <div class="row--gutters">
             <div class="row__medium-6 row__large-3">
-              <a href="../../internettarife/startseite.html">
+              <a href="../internettarife/startseite.html">
                 <div class="service-ad">
                   <div class="service-ad__content">
                     <h2 class="service-ad__title">Tarif auswählen</h2>
-                    <p class="service-ad__txt">Wir bieten Ihnen für jeden Bedarf den richtigen Tarif.Sollten Sie kurzfristig mal mehr Volumen benötigen, können Sie bequem Volumen nachladen</p>
+                    <p>Wir bieten Ihnen für jeden Bedarf den richtigen Tarif. Sollten Sie kurzfristig mal mehr Datenvolumen benötigen, können Sie hier bequem Volumen (GB) nachladen.</p>
                     <span class="service-ad__link">Sat Internet Tarife</span>
                   </div>
                 </div>
@@ -230,7 +229,7 @@
               <div class="service-ad">
                 <div class="service-ad__content">
                   <h2 class="service-ad__title">TV Sender</h2>
-                  <p class="service-ad__txt">Unsere SAT Anlage kann mit einem“TV-Sender Kit“erweitert werden. Wie das genau funktioniert erfahren Sie hier:</p>
+                  <p class="service-ad__txt">Unsere SAT Anlage kann mit einem “TV-Sender Kit“ erweitert werden. Wie das genau funktioniert erfahren Sie hier:</p>
                   <span class="service-ad__link">TV & Internet via Satellit</span>
                 </div>
               </div>
@@ -311,7 +310,7 @@
           </div>
         </div>
       </div>
-      <div class="modal__close"><span>X</span></div>
+      <div class="modal__close"><span class="icon icon--icon-x-icone"></span></div>
     </div>
   </div>
   <!-- build:js assets/scripts/App.js -->

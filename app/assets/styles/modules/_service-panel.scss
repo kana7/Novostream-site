@@ -15,7 +15,17 @@
     position: absolute;
     top: 15px;
     left: 20px;
-    max-width: 210px;
+    max-width: 150px;
+  }
+  @include atMedium{
+    &__content{
+      max-width: 158px;
+    }
+  }
+  @include atLarge{
+    &__content{
+      max-width: 210px;
+    }
   }
   &__title{
     margin: 0;
