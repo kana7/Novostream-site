@@ -38,9 +38,18 @@
     visibility: visible;
   }
   &__img{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+    img{display: inline-block;}
+  }
+  @include atMedium{
+    &__img{
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 0;
+      text-align: left;
+    }
   }
   &__description{
     font-size: 1rem;

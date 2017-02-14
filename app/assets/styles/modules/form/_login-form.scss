@@ -46,7 +46,7 @@
     justify-content: space-between;
     li{
       display: inline-block;
-      &.separator{color: $grey-light-x;}
+      &.separator{color: $grey-light-x; line-height: 29px;}
       a{padding: 0; transition: color .3s ease-in; &:hover{color: $blue;}}
     }
   }

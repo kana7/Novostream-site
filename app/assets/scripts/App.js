@@ -33,6 +33,14 @@ $(function(){
   $('.product-services__item:not(.product-services__item--fixed-display)').each(function(){
     new ProductServicesDisplay($(this));
   });
+  if($('.siema').length > 0){
+    var slider = new Slider('.siema');
+    new Slider('.siema1');
+    new Slider('.siema2');
+    console.log(slider);
+    $('.siema1, .siema2').removeClass('is-visible');
+  }
+  var modal = new Modal();
 
   //new SelectOnClick($('.hardware-selection__nav'), µ'li:not(.hardware-selection__nav__arrow)');
   new CatSelection({
@@ -41,10 +49,6 @@ $(function(){
     content : $('.hardware-selection__content')
   });
 
-  if($('.siema').length > 0){
-    new Slider('.siema');
-  }
-  var modal = new Modal();
   var mobileMenu = new MobileMenu();
   if($('#btnCP').length > 0){
     var availability = new AvailabityCheck();

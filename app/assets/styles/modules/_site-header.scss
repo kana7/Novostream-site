@@ -12,13 +12,13 @@
     height: 29px;
     transition: height .3s ease;
     .site-header__top__links:nth-child(2){
-      li:not(.site-header__top__links__login){
+      &>li:not(.site-header__top__links__login){
         display: none;
       }
     }
     @include atMedium{
       .site-header__top__links:nth-child(2){
-        li:not(.site-header__top__links__login){
+        &>li:not(.site-header__top__links__login){
           display: inline-block;
         }
       }

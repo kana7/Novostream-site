@@ -64,11 +64,33 @@
     }
   }
   &__content{
-    padding: 10px 0 25px;
+    padding: 10px 0 0;
     border-top: 4px solid $orange;
     background-color: white;
     overflow-x: auto;
     overflow-y: hidden;
+    position: relative;
+    .siema-ui{
+      position: absolute;
+      width: 100%;
+      top: 50%;
+      transform: translateY(-50%);
+      padding-left: 5px;
+      padding-right: 5px;
+      .next{float: right;}
+      .next, .prev{
+        outline: 0;
+        border: 0;
+        height: 25px;
+        width: 25px;
+        text-align: center;
+        background-color: $grey-light-x;
+        color: white;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+      .prev{span{position: relative; right: 2px;}}
+    }
     div[data-link]{
       display: none;
       min-height: 253px;

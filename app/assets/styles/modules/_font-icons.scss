@@ -89,7 +89,10 @@
   &--right-arrow:before {
     content: "\71";
   }
-  &--icon-x-icone:before {
+  &--x-icone:before {
     content: "\72";
+  }
+  &--key-icone:before {
+    content: "\73";
   }
 }
