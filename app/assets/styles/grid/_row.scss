@@ -1,6 +1,6 @@
 .row {
   /*Container de ligne*/
-  @include atLarge{
+  @include viewport(min, $min: 1230px){
     margin-left: -($gridGutterWidth/2);
     margin-right: -($gridGutterWidth/2);
   }

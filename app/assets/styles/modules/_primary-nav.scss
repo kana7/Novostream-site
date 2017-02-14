@@ -6,7 +6,7 @@
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
-      right: 0;
+      right: -8px;
     }
   }
   ul {
@@ -16,16 +16,13 @@
   li {
     display: inline-block;
     font-size: 1.25rem;
-    text-transform: capitalize;;
+    text-transform: capitalize;
     overflow: hidden;
     position: relative;
     text-align: center;
     transition: all .3s ease;
     &:not(:first-child) {
       border-left: 2px dotted $orange;
-    }
-    &:last-child>a {
-      padding-right: 0;
     }
     a {
       position: relative;
