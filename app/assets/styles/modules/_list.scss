@@ -9,6 +9,12 @@
   &>li {
     padding-left: 1rem;
     text-indent: -.7rem;
+    &>.open-modal{
+      font-size: 1rem;
+      color: $orange;
+      cursor: pointer;
+      padding-left: 5px;
+    }
   }
   &>li:not(&__empty):before {
     content: "• ";
@@ -20,7 +26,7 @@
   }
   &--ellipsis{
     &>li{
-        @include ellipsis;
+      @include ellipsis;
     }
   }
   &--no-bullet{
@@ -31,9 +37,9 @@
   @include atSmall{
     font-size: 1rem;
     &--ellipsis-at-small{
-        &>li{
-          @include ellipsis;
-        }
+      &>li{
+        @include ellipsis;
+      }
     }
   }
 }

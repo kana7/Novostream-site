@@ -11,11 +11,14 @@
     background-color: $grey-dark;
     height: 29px;
     transition: height .3s ease;
-    .site-header__top__links:nth-child(2)>li{
+    .site-header__top__links:nth-child(1)>li{
+        display: none;
+    }
+    .site-header__top__links:nth-child(2)>li:not(:nth-child(1)){
         display: none;
     }
     @include atMedium{
-      .site-header__top__links:nth-child(2)>li{
+      .site-header__top__links:nth-child(2)>li:not(:nth-child(1)){
           display: inline-block;
       }
     }
@@ -29,6 +32,7 @@
       }
       li {
         display: inline-block;
+        line-height: 29px;
         a{
           display: block;
           padding: 0 0.625rem;
