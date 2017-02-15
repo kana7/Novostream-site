@@ -1,15 +1,20 @@
 body {
-  @include base-style();  
+  @include base-style();
 }
 
 button, input, optgroup, select, textarea{
   font-family: $font-stack;
 }
 
-img{
+img, video, iframe{
   display: block;
   max-width: 100%;
   height: auto;
+}
+.video{
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 a {

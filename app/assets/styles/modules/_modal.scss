@@ -37,10 +37,10 @@
     opacity: 1;
     visibility: visible;
   }
-  &__img{
+  &__img, &__video{
     width: 100%;
     text-align: center;
-    img{display: inline-block;}
+    img, iframe{display: inline-block;}
   }
   @include atMedium{
     &__img{
@@ -50,6 +50,10 @@
       right: 0;
       text-align: left;
     }
+    &__video{
+     position: relative;
+    
+   }
   }
   &__description{
     font-size: 1rem;
