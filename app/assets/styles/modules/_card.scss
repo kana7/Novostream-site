@@ -29,12 +29,11 @@
     color: $orange;
     font-size: 1rem;
     margin: 0;
-    text-transform: lowercase;
+    text-transform: none;
     transition: color .3s ease;
     .flexbox &{
       flex-grow: 1;
     }
-    &:first-letter{text-transform: uppercase;}
   }
   &__txt{
     margin: 0;
